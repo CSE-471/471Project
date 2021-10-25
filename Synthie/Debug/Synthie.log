@@ -1,1 +1,27 @@
-﻿  Synthie.vcxproj -> C:\Users\Chad\source\repos\471Project\Debug\Synthie.exe
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  stdafx.cpp
+cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  WaveformWnd.cpp
+  WaveformBuffer.cpp
+  Wave.cpp
+  SynthieView.cpp
+  Synthie.cpp
+  ProgressDlg.cpp
+  Progress.cpp
+  Notes.cpp
+  MainFrm.cpp
+  CToneInstrument.cpp
+  CSynthesizer.cpp
+  CSineWave.cpp
+  CSequencer.cpp
+  CNote.cpp
+  CInstrument.cpp
+  CAudioNode.cpp
+  CAR.cpp
+  DirSoundStream.cpp
+  DirSoundSource.cpp
+  DirSound.cpp
+  Generating Code...
+  LINK : C:\Users\SeongJin Park (John)\source\repos\471Project\Debug\Synthie.exe not found or not built by the last incremental link; performing full link
+DirSound.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  Synthie.vcxproj -> C:\Users\SeongJin Park (John)\source\repos\471Project\Debug\Synthie.exe
