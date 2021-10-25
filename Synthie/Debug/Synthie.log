@@ -1,4 +1,12 @@
 ﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  SynthieView.cpp
   Piano.cpp
+  CSequencer.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  ProgressDlg.cpp
+  Progress.cpp
+  Synthie.cpp
+  MainFrm.cpp
 DirSound.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
-  Synthie.vcxproj -> C:\Users\SeongJin Park (John)\source\repos\471Project\Debug\Synthie.exe
+  Synthie.vcxproj -> C:\Users\Chad\source\repos\471Project\Debug\Synthie.exe

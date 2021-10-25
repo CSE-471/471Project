@@ -123,6 +123,7 @@ BEGIN
     BEGIN
         MENUITEM "E&xit",                       ID_APP_EXIT
         MENUITEM "&Open Score",                 ID_FILE_OPENSCORE
+        MENUITEM "&Open Seqeuncer Score",       ID_FILE_OPEN32777
     END
     POPUP "&Generate"
     BEGIN

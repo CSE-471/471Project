@@ -1,5 +1,5 @@
 #pragma once
-#pragma comment(lib, "msxml2.lib")
+#include "msxml2.h"
 #include "CSynthesizer.h"
 #include <list>
 class CSequencer
@@ -23,6 +23,7 @@ public:
 	void Start(void);
 	bool Generate(double* frame);
 	void Clear(void);
+	void OpenScore(CString& filename);
 	//! Get the time since we started generating audio
 	double GetTime() { return m_time; }
 
@@ -33,4 +34,7 @@ private:
 	double	m_samplePeriod;
 	std::list<CSynthesizer*> m_synthesizers;
 };
+
+
+#pragma comment(lib, "msxml2.lib")
 

@@ -47,6 +47,7 @@ BEGIN_MESSAGE_MAP(CSynthieView, CWnd)
 	ON_COMMAND(ID_GENERATE_SYNTHESIZER, &CSynthieView::OnGenerateSynthesizer)
 	ON_COMMAND(ID_FILE_OPENSCORE, &CSynthieView::OnFileOpenscore)
 	ON_COMMAND(ID_GENERATE_SEQUENCER, &CSynthieView::OnGenerateSequencer)
+	ON_COMMAND(ID_FILE_OPEN32777, &CSynthieView::OnFileOpen32777)
 END_MESSAGE_MAP()
 
 
@@ -286,4 +287,16 @@ void CSynthieView::OnGenerateSequencer()
 
 	// Call to close the generator output
 	GenerateEnd();
+}
+
+
+void CSynthieView::OnFileOpen32777()
+{
+	static WCHAR BASED_CODE szFilter[] = L"Score files (*.score)|*.score|All Files (*.*)|*.*||";
+
+	CFileDialog dlg(TRUE, L".score", NULL, 0, szFilter, NULL);
+	if (dlg.DoModal() != IDOK)
+		return;
+
+	m_seqeuncer.OpenScore(dlg.GetPathName());
 }

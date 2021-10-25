@@ -70,5 +70,6 @@ private:
 	CSequencer m_seqeuncer;
 public:
 	afx_msg void OnGenerateSequencer();
+	afx_msg void OnFileOpen32777();
 };
 
