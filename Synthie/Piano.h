@@ -1,3 +1,9 @@
+/**
+* Piano.h
+* Seongjin Park
+* The class that generates a dynamic sound of the acoustic piano.
+*/
+
 #pragma once
 #include "CSynthesizer.h"
 #include "CNote.h"
