@@ -139,6 +139,7 @@
     <ClCompile Include="CToneInstrument.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="Notes.cpp" />
+    <ClCompile Include="Piano.cpp" />
     <ClCompile Include="Progress.cpp" />
     <ClCompile Include="ProgressDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -165,6 +166,7 @@
     <ClInclude Include="CToneInstrument.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Notes.h" />
+    <ClInclude Include="Piano.h" />
     <ClInclude Include="Progress.h" />
     <ClInclude Include="ProgressDlg.h" />
     <ClInclude Include="Resource.h" />
