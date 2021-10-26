@@ -31,8 +31,8 @@
 *.out
 *.app
 
-/.vs/Synthie/v16/
 .vs/
+.vs/Synthie/v16/
 Synthie/Debug/
 Debug/
 
