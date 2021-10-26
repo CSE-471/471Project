@@ -15,6 +15,7 @@ public:
 
     //! Constructor
     CSynthesizer::CSynthesizer();
+    CSynthesizer::CSynthesizer(double bpm, int beatspermeasure, double secperbeat);
 
     //! Number of audio channels
     int GetNumChannels() { return m_channels; }
@@ -42,6 +43,7 @@ public:
 
     void OpenScore(CString& filename);
 
+    void CSynthesizer::XmlLoadInstrument(IXMLDOMNode* xml);
 
 private:
     int		m_channels;
@@ -61,7 +63,6 @@ private:
     std::vector<CNote> m_notes;
 
     void CSynthesizer::XmlLoadScore(IXMLDOMNode* xml);
-    void CSynthesizer::XmlLoadInstrument(IXMLDOMNode* xml);
     void CSynthesizer::XmlLoadNote(IXMLDOMNode* xml, std::wstring& instrument);
 };
 

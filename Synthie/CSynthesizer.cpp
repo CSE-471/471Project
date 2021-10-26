@@ -17,6 +17,24 @@ CSynthesizer::CSynthesizer()
     m_beatspermeasure = 4;
 }
 
+CSynthesizer::CSynthesizer(double bpm, int beatspermeasure, double secperbeat)
+{
+    CoInitialize(NULL);
+
+    m_channels = 2;
+    m_sampleRate = 44100.;
+    m_samplePeriod = 1 / m_sampleRate;
+    m_time = 0;
+
+    m_bpm = bpm;
+    m_secperbeat = secperbeat;
+    m_beatspermeasure = beatspermeasure;
+
+    //m_bpm = 60;
+    //m_secperbeat = 1;
+    //m_beatspermeasure = 4;
+}
+
 
 //! Start the synthesizer
 void CSynthesizer::Start(void)
