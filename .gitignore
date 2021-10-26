@@ -54,3 +54,7 @@
 /Synthie/Debug/Synthie.res
 /Synthie/Debug/vc142.idb
 /Synthie/Debug/vc142.pdb
+
+/.vs/*
+/Synthie/Debug/*
+/Debug/*
