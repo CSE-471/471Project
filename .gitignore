@@ -30,9 +30,10 @@
 *.exe
 *.out
 *.app
-/.vs/Synthie/v16/Browse.VC.db
-/.vs/Synthie/v16/Browse.VC.db-wal
-/.vs/Synthie/v16/Brose.VC.db-shm
+
+.vs/Synthie/v16/Browse.VC.db
+.vs/Synthie/v16/Browse.VC.db-wal
+.vs/Synthie/v16/Brose.VC.db-shm
 
 .vs/
 Synthie/Debug/
