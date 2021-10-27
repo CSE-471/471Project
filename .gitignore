@@ -31,8 +31,8 @@
 *.out
 *.app
 
-.vs/**
-
+# Visual C++ cache files 
+.vs/
 Synthie/Debug/
-Debug/
+Debug/ 
 
