@@ -5,8 +5,8 @@
 */
 
 #pragma once
-#include "CSynthesizer.h"
-#include "CNote.h"
+#include "Synthesizer.h"
+#include "Note.h"
 #include <vector>
 
 

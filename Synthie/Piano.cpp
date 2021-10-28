@@ -6,7 +6,7 @@
 
 #include "stdafx.h"
 #include "Piano.h"
-#include "CNote.h"
+#include "Note.h"
 #include <vector>
 
 

@@ -121,9 +121,8 @@ IDR_MAINFRAME MENU
 BEGIN
     POPUP "&File"
     BEGIN
+        MENUITEM "Open Score",                  ID_FILE_OPENSCORE
         MENUITEM "E&xit",                       ID_APP_EXIT
-        MENUITEM "&Open Score",                 ID_FILE_OPENSCORE
-        MENUITEM "&Open Seqeuncer Score",       ID_FILE_OPEN32777
     END
     POPUP "&Generate"
     BEGIN
@@ -131,8 +130,7 @@ BEGIN
         MENUITEM "&Audio Output",               ID_GENERATE_AUDIOOUTPUT
         MENUITEM SEPARATOR
         MENUITEM "&1000Hz Tone",                ID_GENERATE_1000HZTONE
-        MENUITEM "&Synthesizer",                ID_GENERATE_SYNTHESIZER
-        MENUITEM "&Sequencer",                  ID_GENERATE_SEQUENCER
+        MENUITEM "Synthesizer",                 ID_GENERATE_SYNTHESIZER
     END
     POPUP "&Edit"
     BEGIN

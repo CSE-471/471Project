@@ -27,7 +27,6 @@ CSynthieView::CSynthieView()
 {
     m_audiooutput = true;
     m_fileoutput = false;
-
 	m_synthesizer.SetNumChannels(NumChannels());
 	m_synthesizer.SetSampleRate(SampleRate());
 }
@@ -46,8 +45,6 @@ BEGIN_MESSAGE_MAP(CSynthieView, CWnd)
 	ON_COMMAND(ID_GENERATE_1000HZTONE, &CSynthieView::OnGenerate1000hztone)
 	ON_COMMAND(ID_GENERATE_SYNTHESIZER, &CSynthieView::OnGenerateSynthesizer)
 	ON_COMMAND(ID_FILE_OPENSCORE, &CSynthieView::OnFileOpenscore)
-	ON_COMMAND(ID_GENERATE_SEQUENCER, &CSynthieView::OnGenerateSequencer)
-	ON_COMMAND(ID_FILE_OPEN32777, &CSynthieView::OnFileOpen32777)
 END_MESSAGE_MAP()
 
 
@@ -224,6 +221,7 @@ void CSynthieView::OnUpdateGenerateAudiooutput(CCmdUI *pCmdUI)
 }
 
 
+
 void CSynthieView::OnGenerateSynthesizer()
 {
 	// Call to open the generator output
@@ -260,44 +258,4 @@ void CSynthieView::OnFileOpenscore()
 		return;
 
 	m_synthesizer.OpenScore(dlg.GetPathName());
-}
-
-
-void CSynthieView::OnGenerateSequencer()
-{
-	// Call to open the generator output
-	if (!GenerateBegin())
-		return;
-
-	//m_sampleRate = 0;
-	m_seqeuncer.Start();
-	short audio[2];
-	double frame[2];
-
-	while (m_seqeuncer.Generate(frame))
-	{
-		audio[0] = RangeBound(frame[0] * 32767);
-		audio[1] = RangeBound(frame[1] * 32767);
-
-		GenerateWriteFrame(audio);
-
-		// The progress control
-		if (ProgressAbortCheck())
-			break;
-	}
-
-	// Call to close the generator output
-	GenerateEnd();
-}
-
-
-void CSynthieView::OnFileOpen32777()
-{
-	static WCHAR BASED_CODE szFilter[] = L"Score files (*.score)|*.score|All Files (*.*)|*.*||";
-
-	CFileDialog dlg(TRUE, L".score", NULL, 0, szFilter, NULL);
-	if (dlg.DoModal() != IDOK)
-		return;
-
-	m_seqeuncer.OpenScore(dlg.GetPathName());
 }

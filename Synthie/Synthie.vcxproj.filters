@@ -54,34 +54,34 @@
     <ClCompile Include="audio\WaveformWnd.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSynthesizer.cpp">
+    <ClCompile Include="Synthesizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CAudioNode.cpp">
+    <ClCompile Include="AudioNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSineWave.cpp">
+    <ClCompile Include="SineWave.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CInstrument.cpp">
+    <ClCompile Include="Instrument.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CToneInstrument.cpp">
+    <ClCompile Include="ToneInstrument.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CNote.cpp">
+    <ClCompile Include="Note.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CAR.cpp">
+    <ClCompile Include="AR.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSequencer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Piano.cpp">
+    <ClCompile Include="CAdditive.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Piano.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -131,37 +131,37 @@
     <ClInclude Include="audio\WaveformWnd.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSynthesizer.h">
+    <ClInclude Include="Synthesizer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CAudioNode.h">
+    <ClInclude Include="AudioNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSineWave.h">
+    <ClInclude Include="SineWave.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CInstrument.h">
+    <ClInclude Include="Instrument.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CToneInstrument.h">
+    <ClInclude Include="ToneInstrument.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="xmlhelp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CNote.h">
+    <ClInclude Include="Note.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CAR.h">
+    <ClInclude Include="AR.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSequencer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Piano.h">
+    <ClInclude Include="CAdditive.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CEffect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Piano.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

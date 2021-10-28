@@ -460,7 +460,7 @@ bool CDirSoundSource::ReadFrame(short *frame)
             if(m_audioSamples.empty())
             {
                 // Are we done?
-                if(m_audioeof || m_audioStreamEof)
+                if(m_audioeof)
                 {
                     // No more are coming
                     frame[0] = frame[1] = 0;
