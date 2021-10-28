@@ -35,4 +35,5 @@
 .vs/
 Synthie/Debug/
 Debug/ 
-
+*.VC.db
+*.VC.opendb
