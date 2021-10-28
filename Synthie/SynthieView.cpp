@@ -269,6 +269,7 @@ void CSynthieView::OnGenerateSequencer()
 	if (!GenerateBegin())
 		return;
 
+	//m_sampleRate = 0;
 	m_seqeuncer.Start();
 	short audio[2];
 	double frame[2];

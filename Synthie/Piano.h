@@ -20,7 +20,10 @@ public:
     // Destructor
     ~CPiano();
 
-    // Play notes to generate a piano sound 
+    // Set up values to prepare piano audio 
+    void Start(void);
+
+    // Play notes to generate a piano sound (Similar to Generate function)
     // virtual void Play() override;
 
     // Determine when pedal is pressed

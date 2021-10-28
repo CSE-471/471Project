@@ -24,6 +24,8 @@ public:
 	bool Generate(double* frame);
 	void Clear(void);
 	void OpenScore(CString& filename);
+	void XmlLoadScore(IXMLDOMNode* xml);
+	void XmlLoadSynthesizer(IXMLDOMNode* xml);
 	//! Get the time since we started generating audio
 	double GetTime() { return m_time; }
 
@@ -33,6 +35,9 @@ private:
 	double	m_sampleRate;
 	double	m_samplePeriod;
 	std::list<CSynthesizer*> m_synthesizers;
+	double  m_bpm;                  //!< Beats per minute
+	int     m_beatspermeasure;  //!< Beats per measure
+	double  m_secperbeat;        //!< Seconds per beat
 };
 
 
