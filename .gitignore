@@ -31,8 +31,11 @@
 *.out
 *.app
 
-.vs/**
-
+# Visual C++ cache files 
+.vs/
 Synthie/Debug/
-Debug/
-
+Debug/ 
+*.VC.db
+*.VC.opendb
+*.VC.db-shm
+*.VC.db-wal
