@@ -42,6 +42,8 @@ bool CAR::Generate()
 		m_frame[0] = m_source->Frame(0);
 		m_frame[1] = m_source->Frame(1);
 	}
+
+
 	// Update time
 	m_time += GetSamplePeriod();
 

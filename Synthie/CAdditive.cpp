@@ -13,13 +13,7 @@ CAdditive::CAdditive(double bpm)
     m_duration = 0.1;
     m_bpm = bpm;
 	m_nyquist = 20000;
-	m_harmonics.push_back(0.5);
-	m_harmonics.push_back(0.5);
-	m_harmonics.push_back(0.5);
-	m_harmonics.push_back(0.5);
-	m_harmonics.push_back(0.5);
-	m_harmonics.push_back(0.5);
-	m_harmonics.push_back(0.5);
+
 }
 
 CAdditive::~CAdditive()
@@ -101,39 +95,48 @@ void CAdditive::SetNote(CNote* note)
 		}
 		else if (name == "note") // Notes for additive should just be a freq value
 		{
-			m_freq = 800;
+			value.ChangeType(VT_R8);
+			m_freq = value.dblVal;
 			SetFreq(m_freq);
 		}
 		else if (name == "a1")
 		{
+			value.ChangeType(VT_R8);
 			SetAmplitude(value.dblVal);
 		}
 		else if (name == "a2")
 		{
+			value.ChangeType(VT_R8);
 			m_harmonics.push_back(value.dblVal);
 		}
 		else if (name == "a3")
 		{
+			value.ChangeType(VT_R8);
 			m_harmonics.push_back(value.dblVal);
 		}
 		else if (name == "a4")
 		{
+			value.ChangeType(VT_R8);
 			m_harmonics.push_back(value.dblVal);
 		}
 		else if (name == "a5")
 		{
+			value.ChangeType(VT_R8);
 			m_harmonics.push_back(value.dblVal);
 		}
 		else if (name == "a6")
 		{
+			value.ChangeType(VT_R8);
 			m_harmonics.push_back(value.dblVal);
 		}
 		else if (name == "a7")
 		{
+			value.ChangeType(VT_R8);
 			m_harmonics.push_back(value.dblVal);
 		}
 		else if (name == "a8")
 		{
+			value.ChangeType(VT_R8);
 			m_harmonics.push_back(value.dblVal);
 		}
 	}
