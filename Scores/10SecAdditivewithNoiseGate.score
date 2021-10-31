@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <score bpm="120" beatspermeasure="2">
      <instrument instrument="Additive">
-		  <note measure="1" beat="1" duration="0.5" note="500" a1="0.5" a3="0.7" a5="0.5" a7="0.7"/>
-		  <note measure="1" beat="1.5" duration="0.5" note="500" a1="0.5" a3="0.7" a5="0.5" a7="0.7"/>
+		  <note measure="1" beat="1" duration="0.5" note="500" a1="0.5" a3="0.7" a5="0.5" a7="0.7" send1="0.5"/>
+		  <note measure="1" beat="1.5" duration="0.5" note="500" a1="0.5" a3="0.7" a5="0.5" a7="0.7" send1="0.5"/>
 		 
-                  <note measure="2" beat="1" duration="0.5" note="1000" a1="1"/>
+                  <note measure="2" beat="1" duration="0.5" note="1000" a1="1" send1="0.5"/>
 	   
-	   	  <note measure="3" beat="1" duration="0.5" note="500" a1=".5" a3=".8" a5=".8" a7=".9"/>
+	   	  <note measure="3" beat="1" duration="0.5" note="500" a1=".5" a3=".8" a5=".8" a7=".9" send1="0.5"/>
 		  <note measure="3" beat="1.5" duration="0.5" note="500" a1=".5" a3=".8" a5=".8" a7=".9"/>
 
                   <note measure="4" beat="1.5" duration="0.5" note="1000"/>
@@ -26,4 +26,10 @@
 		  
 		  <note measure="9" beat="1" duration="2" note="250" a1=".5" a3=".8" a5=".8" a7=".9"/>
      </instrument>
+
+  <instrument instrument="NoiseGate">
+    <note measure="1" delay=".0025" wet="1" dry="0" threshold=".1" />
+    <note measure="2" delay=".0025" wet=".75" dry=".25" threshold=".1" />
+    <note measure="2" delay=".0025" wet=".5" dry=".5" threshold=".1" />
+  </instrument>
 </score>

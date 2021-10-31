@@ -139,5 +139,36 @@ void CAdditive::SetNote(CNote* note)
 			value.ChangeType(VT_R8);
 			m_harmonics.push_back(value.dblVal);
 		}
+		// Send attribute
+		// send0 is dry audio
+		else if (name == "send0")
+		{
+			value.ChangeType(VT_R8);
+			SetSend(0, value.dblVal);
+		}
+		//send1 is noise gate
+		else if (name == "send1")
+		{
+			value.ChangeType(VT_R8);
+			SetSend(1, value.dblVal);
+		}
+		//send2 is compressor
+		else if (name == "send2")
+		{
+			value.ChangeType(VT_R8);
+			SetSend(2, value.dblVal);
+		}
+		//send3 is ...
+		else if (name == "send3")
+		{
+			value.ChangeType(VT_R8);
+			SetSend(3, value.dblVal);
+		}
+		//send4 is ...
+		else if (name == "send4")
+		{
+			value.ChangeType(VT_R8);
+			SetSend(4, value.dblVal);
+		}
 	}
 }

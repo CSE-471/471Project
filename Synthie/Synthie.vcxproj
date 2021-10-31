@@ -133,6 +133,7 @@
     <ClCompile Include="audio\DirSoundStream.cpp" />
     <ClCompile Include="CAdditive.cpp" />
     <ClCompile Include="CEffect.cpp" />
+    <ClCompile Include="CNoiseGate.cpp" />
     <ClCompile Include="Instrument.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="Note.cpp" />
@@ -161,6 +162,7 @@
     <ClInclude Include="audio\DirSoundStream.h" />
     <ClInclude Include="CAdditive.h" />
     <ClInclude Include="CEffect.h" />
+    <ClInclude Include="CNoiseGate.h" />
     <ClInclude Include="Instrument.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Note.h" />

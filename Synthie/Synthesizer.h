@@ -5,6 +5,8 @@ using namespace std;
 #include "msxml2.h"
 #include "Instrument.h"
 #include "Note.h"
+#include "CNoiseGate.h"
+
 class CSynthesizer
 {
 public:
@@ -51,6 +53,11 @@ public:
 	bool Generate(double*);
 private:
 	double m_time;
+
+	// Declare different effects here
+	// Noise Gate effect
+	CNoiseGate m_noise_gate;
+
 public:
 	// Get the time since we started generating audio
 	double GetTime();

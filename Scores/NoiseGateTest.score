@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<score bpm="120" beatspermeasure="2">
+  <instrument instrument="NoiseGate">
+    <note measure="1" delay=".0025" wet="1" dry="0" threshold=".1" />
+    <note measure="2" delay=".0025" wet=".75" dry=".25" threshold=".1" />
+    <note measure="2" delay=".0025" wet=".5" dry=".5" threshold=".1" />
+  </instrument>
+</score>
