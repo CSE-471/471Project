@@ -424,6 +424,38 @@ IDR_F7SH                WAVE                    "CompletePiano\\F7#s.wav"
 
 IDR_F7                  WAVE                    "CompletePiano\\F7s.wav"
 
+IDR_G1SH                WAVE                    "CompletePiano\\G1#s.wav"
+
+IDR_G1                  WAVE                    "CompletePiano\\G1s.wav"
+
+IDR_G2SH                WAVE                    "CompletePiano\\G2#s.wav"
+
+IDR_G2                  WAVE                    "CompletePiano\\G2s.wav"
+
+IDR_G3SH                WAVE                    "CompletePiano\\G3#s.wav"
+
+IDR_G3                  WAVE                    "CompletePiano\\G3s.wav"
+
+IDR_G4SH                WAVE                    "CompletePiano\\G4#s.wav"
+
+IDR_G4                  WAVE                    "CompletePiano\\G4s.wav"
+
+IDR_G5SH                WAVE                    "CompletePiano\\G5#s.wav"
+
+IDR_G5                  WAVE                    "CompletePiano\\G5s.wav"
+
+IDR_G6SH                WAVE                    "CompletePiano\\G6#s.wav"
+
+IDR_G6                  WAVE                    "CompletePiano\\G6s.wav"
+
+IDR_G7SH                WAVE                    "CompletePiano\\G7#s.wav"
+
+IDR_G7                  WAVE                    "CompletePiano\\G7s.wav"
+
+IDR_PEDALD              WAVE                    "CompletePiano\\pedald.wav"
+
+IDR_PEDALU              WAVE                    "CompletePiano\\pedalu.wav"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //

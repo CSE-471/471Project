@@ -422,5 +422,53 @@
     <Media Include="CompletePiano\F7s.wav">
       <Filter>Resource Files</Filter>
     </Media>
+    <Media Include="CompletePiano\G1#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\G1s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\G2#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\G2s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\G3#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\G3s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\G4#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\G4s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\G5#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\G5s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\G6#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\G6s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\G7#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\G7s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\pedald.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\pedalu.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
   </ItemGroup>
 </Project>

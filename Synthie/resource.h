@@ -91,8 +91,24 @@
 #define IDR_F6SH                        479
 #define IDR_F6                          480
 #define IDR_F7SH                        481
-#define IDR_WAVE1                       482
 #define IDR_F7                          482
+#define IDR_G1SH                        483
+#define IDR_G1                          484
+#define IDR_G2SH                        485
+#define IDR_G2                          486
+#define IDR_G3SH                        487
+#define IDR_G3                          488
+#define IDR_G4SH                        489
+#define IDR_G4                          490
+#define IDR_G5SH                        491
+#define IDR_G5                          492
+#define IDR_G6SH                        493
+#define IDR_G6                          494
+#define IDR_G7SH                        495
+#define IDR_G7                          496
+#define IDR_PEDALD                      497
+#define IDR_WAVE1                       498
+#define IDR_PEDALU                      498
 #define IDC_PROGRESS                    1000
 #define IDC_STOP                        1001
 #define ID_GENERATE_FILEOUTPUT          32771
@@ -107,7 +123,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        483
+#define _APS_NEXT_RESOURCE_VALUE        499
 #define _APS_NEXT_COMMAND_VALUE         32778
 #define _APS_NEXT_CONTROL_VALUE         1002
 #define _APS_NEXT_SYMED_VALUE           310
