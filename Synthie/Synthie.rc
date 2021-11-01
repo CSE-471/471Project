@@ -273,6 +273,44 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// WAVE
+//
+
+IDR_A0SH                WAVE                    "CompletePiano\\A0#s.wav"
+
+IDR_A0                  WAVE                    "CompletePiano\\A0s.wav"
+
+IDR_A1SH                WAVE                    "CompletePiano\\A1#s.wav"
+
+IDR_A1                  WAVE                    "CompletePiano\\A1s.wav"
+
+IDR_A2SH                WAVE                    "CompletePiano\\A2#s.wav"
+
+IDR_A2                  WAVE                    "CompletePiano\\A2s.wav"
+
+IDR_A3SH                WAVE                    "CompletePiano\\A3#s.wav"
+
+IDR_A3                  WAVE                    "CompletePiano\\A3s.wav"
+
+IDR_A4SH                WAVE                    "CompletePiano\\A4#s.wav"
+
+IDR_A4                  WAVE                    "CompletePiano\\A4s.wav"
+
+IDR_A5SH                WAVE                    "CompletePiano\\A5#s.wav"
+
+IDR_A5                  WAVE                    "CompletePiano\\A5s.wav"
+
+IDR_A6SH                WAVE                    "CompletePiano\\A6#s.wav"
+
+IDR_A6                  WAVE                    "CompletePiano\\A6s.wav"
+
+IDR_A7SH                WAVE                    "CompletePiano\\A7#s.wav"
+
+IDR_A7                  WAVE                    "CompletePiano\\A7s.wav"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // String Table
 //
 

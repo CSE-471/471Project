@@ -200,6 +200,24 @@
   <ItemGroup>
     <ResourceCompile Include="Synthie.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="CompletePiano\A0#s.wav" />
+    <Media Include="CompletePiano\A0s.wav" />
+    <Media Include="CompletePiano\A1#s.wav" />
+    <Media Include="CompletePiano\A1s.wav" />
+    <Media Include="CompletePiano\A2#s.wav" />
+    <Media Include="CompletePiano\A2s.wav" />
+    <Media Include="CompletePiano\A3#s.wav" />
+    <Media Include="CompletePiano\A3s.wav" />
+    <Media Include="CompletePiano\A4#s.wav" />
+    <Media Include="CompletePiano\A4s.wav" />
+    <Media Include="CompletePiano\A5#s.wav" />
+    <Media Include="CompletePiano\A5s.wav" />
+    <Media Include="CompletePiano\A6#s.wav" />
+    <Media Include="CompletePiano\A6s.wav" />
+    <Media Include="CompletePiano\A7#s.wav" />
+    <Media Include="CompletePiano\A7s.wav" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -18,6 +18,23 @@
 #define IDD_PROGRESS_DLG                131
 #define IDS_EDIT_MENU                   306
 #define IDR_WAVE14                      407
+#define IDR_A0SH                        409
+#define IDR_A0                          410
+#define IDR_A1SH                        411
+#define IDR_A1                          412
+#define IDR_A2SH                        413
+#define IDR_A2                          414
+#define IDR_A3SH                        415
+#define IDR_A3                          416
+#define IDR_A4SH                        417
+#define IDR_A4                          418
+#define IDR_A5SH                        419
+#define IDR_A5                          420
+#define IDR_A6SH                        421
+#define IDR_A6                          422
+#define IDR_A7SH                        423
+#define IDR_WAVE17                      424
+#define IDR_A7                          424
 #define IDC_PROGRESS                    1000
 #define IDC_STOP                        1001
 #define ID_GENERATE_FILEOUTPUT          32771
@@ -32,7 +49,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        409
+#define _APS_NEXT_RESOURCE_VALUE        425
 #define _APS_NEXT_COMMAND_VALUE         32778
 #define _APS_NEXT_CONTROL_VALUE         1002
 #define _APS_NEXT_SYMED_VALUE           310

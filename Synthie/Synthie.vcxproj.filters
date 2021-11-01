@@ -199,4 +199,54 @@
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="CompletePiano\A0#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A0s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A1#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A1s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A2#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A2s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A3#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A3s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A4#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A4s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A5#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A5s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A6#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A6s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A7#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\A7s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
 </Project>
