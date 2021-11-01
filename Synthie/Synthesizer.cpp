@@ -3,6 +3,7 @@
 #include "Instrument.h"
 #include "ToneInstrument.h"
 #include "CAdditive.h"
+#include "Piano.h"
 #include "xmlhelp.h"
 #include <vector>
 #include <algorithm>
@@ -98,6 +99,13 @@ bool CSynthesizer::Generate(double * frame)
 		{
 			m_compression.SetNote(note);
 			m_compression.Start();
+		}
+
+		// Piano synthesizer is here 
+		else if (note-> Instrument() == L"Piano")
+		{
+			instrument = m_piano.SetPiano();
+			m_piano.SetNote(note);
 		}
 
 		// Configure the instrument object

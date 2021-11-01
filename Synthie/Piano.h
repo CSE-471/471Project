@@ -5,13 +5,14 @@
 */
 
 #pragma once
-#include "Synthesizer.h"
+#include "Instrument.h"
+#include "SineWave.h"
 #include "Note.h"
 #include <vector>
 
 
 class CPiano :
-    public CSynthesizer
+    public CInstrument 
 {
 public:
     // constructor
@@ -22,6 +23,12 @@ public:
 
     // Set up values to prepare piano audio 
     void Start(void);
+
+    // Set an individual note for piano 
+    virtual void SetNote(CNote* note) {};
+
+    // Generate function overrided 
+    virtual bool Generate() { return false; }
 
     // Play notes to generate a piano sound (Similar to Generate function)
     // virtual void Play() override;

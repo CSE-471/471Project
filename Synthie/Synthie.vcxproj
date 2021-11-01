@@ -145,6 +145,7 @@
     <ClCompile Include="Note.cpp" />
     <ClCompile Include="Notes.cpp" />
     <ClCompile Include="Piano.cpp" />
+    <ClCompile Include="PianoSys.cpp" />
     <ClCompile Include="Progress.cpp" />
     <ClCompile Include="ProgressDlg.cpp" />
     <ClCompile Include="SineWave.cpp" />
@@ -175,6 +176,7 @@
     <ClInclude Include="Note.h" />
     <ClInclude Include="Notes.h" />
     <ClInclude Include="Piano.h" />
+    <ClInclude Include="PianoSys.h" />
     <ClInclude Include="Progress.h" />
     <ClInclude Include="ProgressDlg.h" />
     <ClInclude Include="Resource.h" />

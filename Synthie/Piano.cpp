@@ -7,6 +7,7 @@
 #include "stdafx.h"
 #include "Piano.h"
 #include "Note.h"
+#include "Instrument.h"
 #include <vector>
 
 
@@ -22,6 +23,23 @@ CPiano::CPiano()
 * Destructor
 */
 CPiano::~CPiano()
+{
+
+}
+
+/**
+* Set up components for the piano to begin playing 
+*/
+void CPiano::Start()
+{
+
+}
+
+/**
+* Set the individual note for the piano 
+*/
+
+void SetNote(CNote* note)
 {
 
 }

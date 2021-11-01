@@ -7,6 +7,7 @@ using namespace std;
 #include "Note.h"
 #include "CNoiseGate.h"
 #include "Compression.h"
+#include "PianoSys.h"
 
 class CSynthesizer
 {
@@ -50,6 +51,9 @@ private:
 	std::list<CInstrument *>  m_instruments;
 	std::vector<CNote> m_notes;
 
+	// Piano system object 
+	CPianoSys m_piano;
+
 	// Send attributes member variables
 	double m_send0;
 	double m_send1;
@@ -68,6 +72,7 @@ private:
 
 	//Compression effect
 	CCompression m_compression;
+
 
 public:
 	// Get the time since we started generating audio
