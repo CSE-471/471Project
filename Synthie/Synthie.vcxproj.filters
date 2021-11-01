@@ -464,5 +464,8 @@
     <Media Include="..\CompletePiano\G7s.wav">
       <Filter>Resource Files</Filter>
     </Media>
+    <Media Include="CompletePiano\A0s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
   </ItemGroup>
 </Project>
