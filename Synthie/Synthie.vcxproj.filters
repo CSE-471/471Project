@@ -272,5 +272,50 @@
     <Media Include="CompletePiano\B7s.wav">
       <Filter>Resource Files</Filter>
     </Media>
+    <Media Include="CompletePiano\C1#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\C1s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\C2#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\C2s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\C3#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\C3s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\C4#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\C4s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\C5#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\C5s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\C6#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\C6s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\C7#s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\C7s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\C8s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
   </ItemGroup>
 </Project>
