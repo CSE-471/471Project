@@ -94,6 +94,11 @@ bool CSynthesizer::Generate(double * frame)
 			m_noise_gate.SetNote(note);
 			m_noise_gate.Start();
 		}
+		else if (note->Instrument() == L"Compression")
+		{
+			m_compression.SetNote(note);
+			m_compression.Start();
+		}
 
 		// Configure the instrument object
 		if (instrument != NULL)
@@ -147,6 +152,13 @@ bool CSynthesizer::Generate(double * frame)
 		// Call the generate function
 		if (instrument->Generate())
 		{
+			// Send the XML send attribute to the instrument m_sends array
+			instrument->SetSend(0, m_send0);
+			instrument->SetSend(1, m_send1);
+			instrument->SetSend(2, m_send2);
+			instrument->SetSend(3, m_send3);
+			instrument->SetSend(4, m_send4);
+
 			// If we returned true, we have a valid sample.  Add it 
 			// to the frame for each channel
 			for (int i = 0; i < 5; i++)
@@ -179,14 +191,30 @@ bool CSynthesizer::Generate(double * frame)
 		noise_gate_frames[0] = 0;
 		noise_gate_frames[1] = 0;
 
+		// Compression effect frames
+		double compression_frames[2];
+		compression_frames[0] = 0;
+		compression_frames[1] = 0;
+
 		// Process effect here
-		m_noise_gate.Process(channelframes[1], noise_gate_frames);
+		// Noise gate
+		if (channelframes[1][0] != 0)
+		{
+			m_noise_gate.Process(channelframes[1], noise_gate_frames);
+		}
+		// Compression
+		else if (channelframes[2][0] != 0)
+		{
+			m_compression.Process(channelframes[2], compression_frames);
+		}
+		
 
 		// Sum all effects to frames
 		for (int i = 0; i < GetNumChannels(); i++)
 		{
 			frame[i] += frame[i];
 			frame[i] += noise_gate_frames[i];
+			frame[i] += compression_frames[i];
 		}
 
 		// Move to the next instrument in the list
@@ -363,6 +391,37 @@ void CSynthesizer::XmlLoadInstrument(IXMLDOMNode * xml)
 		if (name == "instrument")
 		{
 			instrument = value.bstrVal;
+		}
+		// Send attribute
+		// send0 is dry audio
+		else if (name == "send0")
+		{
+			value.ChangeType(VT_R8);
+			m_send0 = value.dblVal;
+		}
+		//send1 is noise gate
+		else if (name == "send1")
+		{
+			value.ChangeType(VT_R8);
+			m_send1 = value.dblVal;
+		}
+		//send2 is compressor
+		else if (name == "send2")
+		{
+			value.ChangeType(VT_R8);
+			m_send2 = value.dblVal;
+		}
+		//send3 is ...
+		else if (name == "send3")
+		{
+			value.ChangeType(VT_R8);
+			m_send3 = value.dblVal;
+		}
+		//send4 is ...
+		else if (name == "send4")
+		{
+			value.ChangeType(VT_R8);
+			m_send4 = value.dblVal;
 		}
 	}
 

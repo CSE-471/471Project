@@ -6,6 +6,7 @@ using namespace std;
 #include "Instrument.h"
 #include "Note.h"
 #include "CNoiseGate.h"
+#include "Compression.h"
 
 class CSynthesizer
 {
@@ -48,6 +49,13 @@ private:
 	double m_beat;              //!< The current beat within the measure
 	std::list<CInstrument *>  m_instruments;
 	std::vector<CNote> m_notes;
+
+	// Send attributes member variables
+	double m_send0;
+	double m_send1;
+	double m_send2;
+	double m_send3;
+	double m_send4;
 public:
 	void Start();
 	bool Generate(double*);
@@ -57,6 +65,9 @@ private:
 	// Declare different effects here
 	// Noise Gate effect
 	CNoiseGate m_noise_gate;
+
+	//Compression effect
+	CCompression m_compression;
 
 public:
 	// Get the time since we started generating audio

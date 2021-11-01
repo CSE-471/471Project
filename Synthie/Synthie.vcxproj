@@ -139,6 +139,7 @@
     <ClCompile Include="CAdditive.cpp" />
     <ClCompile Include="CEffect.cpp" />
     <ClCompile Include="CNoiseGate.cpp" />
+    <ClCompile Include="Compression.cpp" />
     <ClCompile Include="Instrument.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="Note.cpp" />
@@ -168,6 +169,7 @@
     <ClInclude Include="CAdditive.h" />
     <ClInclude Include="CEffect.h" />
     <ClInclude Include="CNoiseGate.h" />
+    <ClInclude Include="Compression.h" />
     <ClInclude Include="Instrument.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Note.h" />

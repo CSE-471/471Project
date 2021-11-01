@@ -27,9 +27,7 @@
 		  <note measure="9" beat="1" duration="2" note="250" a1=".5" a3=".8" a5=".8" a7=".9"/>
      </instrument>
 
-  <instrument instrument="NoiseGate">
-    <note measure="1" delay=".0025" wet="1" dry="0" threshold=".1" />
-    <note measure="2" delay=".0025" wet=".75" dry=".25" threshold=".1" />
-    <note measure="2" delay=".0025" wet=".5" dry=".5" threshold=".1" />
+  <instrument instrument="Compress">
+    <note measure="7" delay=".0025" wet="1" dry="0" threshold=".005" />
   </instrument>
 </score>
