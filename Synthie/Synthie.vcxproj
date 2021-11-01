@@ -217,6 +217,14 @@
     <Media Include="CompletePiano\A6s.wav" />
     <Media Include="CompletePiano\A7#s.wav" />
     <Media Include="CompletePiano\A7s.wav" />
+    <Media Include="CompletePiano\B0s.wav" />
+    <Media Include="CompletePiano\B1s.wav" />
+    <Media Include="CompletePiano\B2s.wav" />
+    <Media Include="CompletePiano\B3s.wav" />
+    <Media Include="CompletePiano\B4s.wav" />
+    <Media Include="CompletePiano\B5s.wav" />
+    <Media Include="CompletePiano\B6s.wav" />
+    <Media Include="CompletePiano\B7s.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

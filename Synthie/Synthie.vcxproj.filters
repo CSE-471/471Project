@@ -248,5 +248,29 @@
     <Media Include="CompletePiano\A7s.wav">
       <Filter>Resource Files</Filter>
     </Media>
+    <Media Include="CompletePiano\B0s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\B1s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\B2s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\B3s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\B4s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\B5s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\B6s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="CompletePiano\B7s.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
   </ItemGroup>
 </Project>

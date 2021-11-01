@@ -308,6 +308,22 @@ IDR_A7SH                WAVE                    "CompletePiano\\A7#s.wav"
 
 IDR_A7                  WAVE                    "CompletePiano\\A7s.wav"
 
+IDR_B0                  WAVE                    "CompletePiano\\B0s.wav"
+
+IDR_B1                  WAVE                    "CompletePiano\\B1s.wav"
+
+IDR_B2                  WAVE                    "CompletePiano\\B2s.wav"
+
+IDR_B3                  WAVE                    "CompletePiano\\B3s.wav"
+
+IDR_B4                  WAVE                    "CompletePiano\\B4s.wav"
+
+IDR_B5                  WAVE                    "CompletePiano\\B5s.wav"
+
+IDR_B6                  WAVE                    "CompletePiano\\B6s.wav"
+
+IDR_B7                  WAVE                    "CompletePiano\\B7s.wav"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
