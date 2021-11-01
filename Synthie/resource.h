@@ -18,8 +18,6 @@
 #define IDD_PROGRESS_DLG                131
 #define IDS_EDIT_MENU                   306
 #define IDR_WAVE14                      407
-#define IDR_WAVE1                       408
-#define IDR_A0SH                        408
 #define IDC_PROGRESS                    1000
 #define IDC_STOP                        1001
 #define ID_GENERATE_FILEOUTPUT          32771
