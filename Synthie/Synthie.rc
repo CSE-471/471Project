@@ -396,6 +396,34 @@ IDR_E6                  WAVE                    "CompletePiano\\E6s.wav"
 
 IDR_E7                  WAVE                    "CompletePiano\\E7s.wav"
 
+IDR_F1SH                WAVE                    "CompletePiano\\F1#s.wav"
+
+IDR_F1                  WAVE                    "CompletePiano\\F1s.wav"
+
+IDR_F2SH                WAVE                    "CompletePiano\\F2#s.wav"
+
+IDR_F2                  WAVE                    "CompletePiano\\F2s.wav"
+
+IDR_F3SH                WAVE                    "CompletePiano\\F3#s.wav"
+
+IDR_F3                  WAVE                    "CompletePiano\\F3s.wav"
+
+IDR_F4SH                WAVE                    "CompletePiano\\F4#s.wav"
+
+IDR_F4                  WAVE                    "CompletePiano\\F4s.wav"
+
+IDR_F5SH                WAVE                    "CompletePiano\\F5#s.wav"
+
+IDR_F5                  WAVE                    "CompletePiano\\F5s.wav"
+
+IDR_F6SH                WAVE                    "CompletePiano\\F6#s.wav"
+
+IDR_F6                  WAVE                    "CompletePiano\\F6s.wav"
+
+IDR_F7SH                WAVE                    "CompletePiano\\F7#s.wav"
+
+IDR_F7                  WAVE                    "CompletePiano\\F7s.wav"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
