@@ -240,6 +240,27 @@
     <Media Include="CompletePiano\C7#s.wav" />
     <Media Include="CompletePiano\C7s.wav" />
     <Media Include="CompletePiano\C8s.wav" />
+    <Media Include="CompletePiano\D1#s.wav" />
+    <Media Include="CompletePiano\D1s.wav" />
+    <Media Include="CompletePiano\D2#s.wav" />
+    <Media Include="CompletePiano\D2s.wav" />
+    <Media Include="CompletePiano\D3#s.wav" />
+    <Media Include="CompletePiano\D3s.wav" />
+    <Media Include="CompletePiano\D4#s.wav" />
+    <Media Include="CompletePiano\D4s.wav" />
+    <Media Include="CompletePiano\D5#s.wav" />
+    <Media Include="CompletePiano\D5s.wav" />
+    <Media Include="CompletePiano\D6#s.wav" />
+    <Media Include="CompletePiano\D6s.wav" />
+    <Media Include="CompletePiano\D7#s.wav" />
+    <Media Include="CompletePiano\D7s.wav" />
+    <Media Include="CompletePiano\E1s.wav" />
+    <Media Include="CompletePiano\E2s.wav" />
+    <Media Include="CompletePiano\E3s.wav" />
+    <Media Include="CompletePiano\E4s.wav" />
+    <Media Include="CompletePiano\E5s.wav" />
+    <Media Include="CompletePiano\E6s.wav" />
+    <Media Include="CompletePiano\E7s.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
