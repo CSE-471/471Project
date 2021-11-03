@@ -25,10 +25,15 @@ public:
     void Start(void);
 
     // Set an individual note for piano 
-    virtual void SetNote(CNote* note) {};
+    virtual void SetNote(CNote* note);
 
     // Generate function overrided 
-    virtual bool Generate() { return false; }
+    virtual bool Generate();
+
+    void SetBeat(double beat) { m_beat = beat; }
+    void SetDuration(double duration) { m_duration = duration; }
+    void SetPedal(bool pedal) { m_pedal = pedal; }
+    void SetWaves(std::vector<short> waves) { m_waves = waves; }
 
     // Play notes to generate a piano sound (Similar to Generate function)
     // virtual void Play() override;
@@ -50,8 +55,13 @@ private:
     // Collection of notes used for piano
     std::vector<CNote> m_notes;
 
+    double m_beat = 0;
+    double m_duration = 0;
+    int m_index;
+    int m_sampletotal;
+
     bool m_pedal = false;
-    bool m_pressed = false;
+    std::vector<short> m_waves;
 
     double m_dynamic = 0;
 };

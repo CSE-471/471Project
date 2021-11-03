@@ -53,6 +53,8 @@ private:
 
 	// Piano system object 
 	CPianoSys m_piano;
+	// detemine if current instrument is piano 
+	bool m_callpiano = false;
 
 	// Send attributes member variables
 	double m_send0;

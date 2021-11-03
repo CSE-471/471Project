@@ -104,9 +104,10 @@ bool CSynthesizer::Generate(double * frame)
 		// Piano synthesizer is here 
 		else if (note-> Instrument() == L"Piano")
 		{
-			instrument = m_piano.SetPiano();
-			m_piano.SetNote(note);
+			instrument = m_piano.SetPiano(note);
+			m_callpiano = true;
 		}
+
 
 		// Configure the instrument object
 		if (instrument != NULL)
