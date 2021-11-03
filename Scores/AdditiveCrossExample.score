@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<score bpm="180" beatspermeasure="8">
+     <instrument instrument="Additive">
+
+                  <note measure="1" beat="1" duration="6" note="G2" a1="0.5" a2="0.4" a3="0.3" a4="0.2"/>
+                  <note measure="2" beat="1" duration="6" note="G2" a1="0.9" a2="0.8" a3="0.7" a4="0.6" />
+                  <note measure="3" beat="1" duration="6" note="G2" a1="0.5" a2="0.4" a3="0.3" a4="0.2" b1="0.9" b2="0.8" b3="0.7" b4="0.6"/>
+		  
+     </instrument>
+</score>

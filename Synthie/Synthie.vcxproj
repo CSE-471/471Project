@@ -137,6 +137,7 @@
     <ClCompile Include="audio\DirSoundSource.cpp" />
     <ClCompile Include="audio\DirSoundStream.cpp" />
     <ClCompile Include="CAdditive.cpp" />
+    <ClCompile Include="CAdditiveSynthesizer.cpp" />
     <ClCompile Include="CEffect.cpp" />
     <ClCompile Include="CNoiseGate.cpp" />
     <ClCompile Include="Compression.cpp" />
@@ -168,6 +169,7 @@
     <ClInclude Include="audio\DirSoundSource.h" />
     <ClInclude Include="audio\DirSoundStream.h" />
     <ClInclude Include="CAdditive.h" />
+    <ClInclude Include="CAdditiveSynthesizer.h" />
     <ClInclude Include="CEffect.h" />
     <ClInclude Include="CNoiseGate.h" />
     <ClInclude Include="Compression.h" />

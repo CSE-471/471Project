@@ -29,3 +29,4 @@ bool CSineWave::Generate()
 
 	return true;
 }
+
