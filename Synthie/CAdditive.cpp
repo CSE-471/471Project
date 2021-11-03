@@ -45,9 +45,8 @@ bool CAdditive::Generate()
 
 void CAdditive::SetNote(CNote* note)
 {
-
 	// Get a list of all attribute nodes and the
-// length of that list
+	// length of that list
 	CComPtr<IXMLDOMNamedNodeMap> attributes;
 	note->Node()->get_attributes(&attributes);
 	long len;

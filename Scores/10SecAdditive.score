@@ -18,5 +18,6 @@
 		  		  
 
 		  
+		  <note measure="9" beat="1" duration="2" note="250" a1=".5" a3=".8" a5=".8" a7=".9"/>
      </instrument>
 </score>

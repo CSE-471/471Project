@@ -121,8 +121,9 @@ IDR_MAINFRAME MENU
 BEGIN
     POPUP "&File"
     BEGIN
-        MENUITEM "Open Score",                  ID_FILE_OPENSCORE
         MENUITEM "E&xit",                       ID_APP_EXIT
+        MENUITEM "&Open Score",                 ID_FILE_OPENSCORE
+        MENUITEM "&Open Seqeuncer Score",       ID_FILE_OPEN32777
     END
     POPUP "&Generate"
     BEGIN
@@ -130,7 +131,8 @@ BEGIN
         MENUITEM "&Audio Output",               ID_GENERATE_AUDIOOUTPUT
         MENUITEM SEPARATOR
         MENUITEM "&1000Hz Tone",                ID_GENERATE_1000HZTONE
-        MENUITEM "Synthesizer",                 ID_GENERATE_SYNTHESIZER
+        MENUITEM "&Synthesizer",                ID_GENERATE_SYNTHESIZER
+        MENUITEM "&Sequencer",                  ID_GENERATE_SEQUENCER
     END
     POPUP "&Edit"
     BEGIN
@@ -267,6 +269,192 @@ BEGIN
     END
 END
 #endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_A0SH                WAVE                    "CompletePiano\\A0#s.wav"
+
+IDR_A0                  WAVE                    "CompletePiano\\A0s.wav"
+
+IDR_A1SH                WAVE                    "CompletePiano\\A1#s.wav"
+
+IDR_A1                  WAVE                    "CompletePiano\\A1s.wav"
+
+IDR_A2SH                WAVE                    "CompletePiano\\A2#s.wav"
+
+IDR_A2                  WAVE                    "CompletePiano\\A2s.wav"
+
+IDR_A3SH                WAVE                    "CompletePiano\\A3#s.wav"
+
+IDR_A3                  WAVE                    "CompletePiano\\A3s.wav"
+
+IDR_A4SH                WAVE                    "CompletePiano\\A4#s.wav"
+
+IDR_A4                  WAVE                    "CompletePiano\\A4s.wav"
+
+IDR_A5SH                WAVE                    "CompletePiano\\A5#s.wav"
+
+IDR_A5                  WAVE                    "CompletePiano\\A5s.wav"
+
+IDR_A6SH                WAVE                    "CompletePiano\\A6#s.wav"
+
+IDR_A6                  WAVE                    "CompletePiano\\A6s.wav"
+
+IDR_A7SH                WAVE                    "CompletePiano\\A7#s.wav"
+
+IDR_A7                  WAVE                    "CompletePiano\\A7s.wav"
+
+IDR_B0                  WAVE                    "CompletePiano\\B0s.wav"
+
+IDR_B1                  WAVE                    "CompletePiano\\B1s.wav"
+
+IDR_B2                  WAVE                    "CompletePiano\\B2s.wav"
+
+IDR_B3                  WAVE                    "CompletePiano\\B3s.wav"
+
+IDR_B4                  WAVE                    "CompletePiano\\B4s.wav"
+
+IDR_B5                  WAVE                    "CompletePiano\\B5s.wav"
+
+IDR_B6                  WAVE                    "CompletePiano\\B6s.wav"
+
+IDR_B7                  WAVE                    "CompletePiano\\B7s.wav"
+
+IDR_C1SH                WAVE                    "CompletePiano\\C1#s.wav"
+
+IDR_C1                  WAVE                    "CompletePiano\\C1s.wav"
+
+IDR_C2SH                WAVE                    "CompletePiano\\C2#s.wav"
+
+IDR_C2                  WAVE                    "CompletePiano\\C2s.wav"
+
+IDR_C3SH                WAVE                    "CompletePiano\\C3#s.wav"
+
+IDR_C3                  WAVE                    "CompletePiano\\C3s.wav"
+
+IDR_C4SH                WAVE                    "CompletePiano\\C4#s.wav"
+
+IDR_C4                  WAVE                    "CompletePiano\\C4s.wav"
+
+IDR_C5SH                WAVE                    "CompletePiano\\C5#s.wav"
+
+IDR_C5                  WAVE                    "CompletePiano\\C5s.wav"
+
+IDR_C6SH                WAVE                    "CompletePiano\\C6#s.wav"
+
+IDR_C6                  WAVE                    "CompletePiano\\C6s.wav"
+
+IDR_C7SH                WAVE                    "CompletePiano\\C7#s.wav"
+
+IDR_C7                  WAVE                    "CompletePiano\\C7s.wav"
+
+IDR_C8                  WAVE                    "CompletePiano\\C8s.wav"
+
+IDR_D1SH                WAVE                    "CompletePiano\\D1#s.wav"
+
+IDR_D1                  WAVE                    "CompletePiano\\D1s.wav"
+
+IDR_D2SH                WAVE                    "CompletePiano\\D2#s.wav"
+
+IDR_D2                  WAVE                    "CompletePiano\\D2s.wav"
+
+IDR_D3SH                WAVE                    "CompletePiano\\D3#s.wav"
+
+IDR_D3                  WAVE                    "CompletePiano\\D3s.wav"
+
+IDR_D4SH                WAVE                    "CompletePiano\\D4#s.wav"
+
+IDR_D4                  WAVE                    "CompletePiano\\D4s.wav"
+
+IDR_D5SH                WAVE                    "CompletePiano\\D5#s.wav"
+
+IDR_D5                  WAVE                    "CompletePiano\\D5s.wav"
+
+IDR_D6SH                WAVE                    "CompletePiano\\D6#s.wav"
+
+IDR_D6                  WAVE                    "CompletePiano\\D6s.wav"
+
+IDR_D7SH                WAVE                    "CompletePiano\\D7#s.wav"
+
+IDR_D7                  WAVE                    "CompletePiano\\D7s.wav"
+
+IDR_E1                  WAVE                    "CompletePiano\\E1s.wav"
+
+IDR_E2                  WAVE                    "CompletePiano\\E2s.wav"
+
+IDR_E3                  WAVE                    "CompletePiano\\E3s.wav"
+
+IDR_E4                  WAVE                    "CompletePiano\\E4s.wav"
+
+IDR_E5                  WAVE                    "CompletePiano\\E5s.wav"
+
+IDR_E6                  WAVE                    "CompletePiano\\E6s.wav"
+
+IDR_E7                  WAVE                    "CompletePiano\\E7s.wav"
+
+IDR_F1SH                WAVE                    "CompletePiano\\F1#s.wav"
+
+IDR_F1                  WAVE                    "CompletePiano\\F1s.wav"
+
+IDR_F2SH                WAVE                    "CompletePiano\\F2#s.wav"
+
+IDR_F2                  WAVE                    "CompletePiano\\F2s.wav"
+
+IDR_F3SH                WAVE                    "CompletePiano\\F3#s.wav"
+
+IDR_F3                  WAVE                    "CompletePiano\\F3s.wav"
+
+IDR_F4SH                WAVE                    "CompletePiano\\F4#s.wav"
+
+IDR_F4                  WAVE                    "CompletePiano\\F4s.wav"
+
+IDR_F5SH                WAVE                    "CompletePiano\\F5#s.wav"
+
+IDR_F5                  WAVE                    "CompletePiano\\F5s.wav"
+
+IDR_F6SH                WAVE                    "CompletePiano\\F6#s.wav"
+
+IDR_F6                  WAVE                    "CompletePiano\\F6s.wav"
+
+IDR_F7SH                WAVE                    "CompletePiano\\F7#s.wav"
+
+IDR_F7                  WAVE                    "CompletePiano\\F7s.wav"
+
+IDR_G1SH                WAVE                    "CompletePiano\\G1#s.wav"
+
+IDR_G1                  WAVE                    "CompletePiano\\G1s.wav"
+
+IDR_G2SH                WAVE                    "CompletePiano\\G2#s.wav"
+
+IDR_G2                  WAVE                    "CompletePiano\\G2s.wav"
+
+IDR_G3SH                WAVE                    "CompletePiano\\G3#s.wav"
+
+IDR_G3                  WAVE                    "CompletePiano\\G3s.wav"
+
+IDR_G4SH                WAVE                    "CompletePiano\\G4#s.wav"
+
+IDR_G4                  WAVE                    "CompletePiano\\G4s.wav"
+
+IDR_G5SH                WAVE                    "CompletePiano\\G5#s.wav"
+
+IDR_G5                  WAVE                    "CompletePiano\\G5s.wav"
+
+IDR_G6SH                WAVE                    "CompletePiano\\G6#s.wav"
+
+IDR_G6                  WAVE                    "CompletePiano\\G6s.wav"
+
+IDR_G7SH                WAVE                    "CompletePiano\\G7#s.wav"
+
+IDR_G7                  WAVE                    "CompletePiano\\G7s.wav"
+
+IDR_PEDALD              WAVE                    "CompletePiano\\pedald.wav"
+
+IDR_PEDALU              WAVE                    "CompletePiano\\pedalu.wav"
 
 
 /////////////////////////////////////////////////////////////////////////////

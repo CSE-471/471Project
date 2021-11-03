@@ -3,6 +3,7 @@
 #include "Instrument.h"
 #include "ToneInstrument.h"
 #include "CAdditive.h"
+#include "Piano.h"
 #include "xmlhelp.h"
 #include <vector>
 #include <algorithm>
@@ -88,6 +89,25 @@ bool CSynthesizer::Generate(double * frame)
 		{
 			instrument = new CAdditive(GetBeatsPerMinute());
 		}
+		// For noise gate effect here
+		else if (note->Instrument() == L"Noise Gate")
+		{
+			m_noise_gate.SetNote(note);
+			m_noise_gate.Start();
+		}
+		else if (note->Instrument() == L"Compression")
+		{
+			m_compression.SetNote(note);
+			m_compression.Start();
+		}
+
+		// Piano synthesizer is here 
+		else if (note-> Instrument() == L"Piano")
+		{
+			instrument = m_piano.SetPiano(note);
+			m_callpiano = true;
+		}
+
 
 		// Configure the instrument object
 		if (instrument != NULL)
@@ -104,7 +124,14 @@ bool CSynthesizer::Generate(double * frame)
 	//
 	// Phase 2: Clear all channels to silence 
 	//
-
+	double channelframes[5][2];
+	for (int i = 0; i < 5; i++)
+	{
+		for (int c = 0; c < GetNumChannels(); c++)
+		{
+			channelframes[i][c] = 0;
+		}
+	}
 	for (int c = 0; c<GetNumChannels(); c++)
 	{
 		frame[c] = 0;
@@ -134,11 +161,21 @@ bool CSynthesizer::Generate(double * frame)
 		// Call the generate function
 		if (instrument->Generate())
 		{
+			// Send the XML send attribute to the instrument m_sends array
+			instrument->SetSend(0, m_send0);
+			instrument->SetSend(1, m_send1);
+			instrument->SetSend(2, m_send2);
+			instrument->SetSend(3, m_send3);
+			instrument->SetSend(4, m_send4);
+
 			// If we returned true, we have a valid sample.  Add it 
-			// to the frame.
-			for (int c = 0; c<GetNumChannels(); c++)
+			// to the frame for each channel
+			for (int i = 0; i < 5; i++)
 			{
-				frame[c] += instrument->Frame(c);
+				for (int c = 0; c < GetNumChannels(); c++)
+				{
+					channelframes[i][c] += instrument->Frame(c) * instrument->Send(i);
+				}
 			}
 		}
 		else
@@ -147,6 +184,46 @@ bool CSynthesizer::Generate(double * frame)
 			// from the list and delete it from memory.
 			m_instruments.erase(node);
 			delete instrument;
+		}
+
+		//
+		// Phase 3a: Effects
+		// 
+		double frames[2];
+		for (int i = 0; i < GetNumChannels(); i++)
+		{
+			frames[i] = channelframes[0][i];
+		}
+		//Add code here for 4 effects Noise Gate, Compressor, ..., and ...
+		// Noise Gate effect frames
+		double noise_gate_frames[2];
+		noise_gate_frames[0] = 0;
+		noise_gate_frames[1] = 0;
+
+		// Compression effect frames
+		double compression_frames[2];
+		compression_frames[0] = 0;
+		compression_frames[1] = 0;
+
+		// Process effect here
+		// Noise gate
+		if (channelframes[1][0] != 0)
+		{
+			m_noise_gate.Process(channelframes[1], noise_gate_frames);
+		}
+		// Compression
+		else if (channelframes[2][0] != 0)
+		{
+			m_compression.Process(channelframes[2], compression_frames);
+		}
+		
+
+		// Sum all effects to frames
+		for (int i = 0; i < GetNumChannels(); i++)
+		{
+			frame[i] += frame[i];
+			frame[i] += noise_gate_frames[i];
+			frame[i] += compression_frames[i];
 		}
 
 		// Move to the next instrument in the list
@@ -324,6 +401,37 @@ void CSynthesizer::XmlLoadInstrument(IXMLDOMNode * xml)
 		if (name == "instrument")
 		{
 			instrument = value.bstrVal;
+		}
+		// Send attribute
+		// send0 is dry audio
+		else if (name == "send0")
+		{
+			value.ChangeType(VT_R8);
+			m_send0 = value.dblVal;
+		}
+		//send1 is noise gate
+		else if (name == "send1")
+		{
+			value.ChangeType(VT_R8);
+			m_send1 = value.dblVal;
+		}
+		//send2 is compressor
+		else if (name == "send2")
+		{
+			value.ChangeType(VT_R8);
+			m_send2 = value.dblVal;
+		}
+		//send3 is ...
+		else if (name == "send3")
+		{
+			value.ChangeType(VT_R8);
+			m_send3 = value.dblVal;
+		}
+		//send4 is ...
+		else if (name == "send4")
+		{
+			value.ChangeType(VT_R8);
+			m_send4 = value.dblVal;
 		}
 	}
 

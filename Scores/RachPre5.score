@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<score bpm="120" beatspermeasure="2">
+     <instrument instrument="Piano">
+          <note measure="1" beat="1" duration="0.5" note="CompletePiano/G1s.wav"/>
+          <note measure="1" beat="1" duration="0.5" note="CompletePiano/G2s.wav"/>
+          <note measure="1" beat="1" duration="0.5" note="CompletePiano/G3s.wav"/>
+
+          <note measure="1" beat="2" duration="0.30" note="CompletePiano/D4s.wav"/>
+          <note measure="1" beat="2" duration="0.30" note="CompletePiano/A3#s.wav"/>
+          <note measure="1" beat="2" duration="0.30" note="CompletePiano/G3s.wav"/>
+          <note measure="1" beat="2" duration="0.30" note="CompletePiano/D3s.wav"/>
+
+          <note measure="1" beat="2.30" duration="0.30" note="CompletePiano/D4s.wav"/>
+          <note measure="1" beat="2.30" duration="0.30" note="CompletePiano/A3#s.wav"/>
+          <note measure="1" beat="2.30" duration="0.30" note="CompletePiano/G3s.wav"/>
+          <note measure="1" beat="2.30" duration="0.30" note="CompletePiano/D3s.wav"/>
+
+          <note measure="1" beat="2.60" duration="0.40" note="CompletePiano/D4s.wav"/>
+          <note measure="1" beat="2.60" duration="0.40" note="CompletePiano/A3#s.wav"/>
+          <note measure="1" beat="2.60" duration="0.40" note="CompletePiano/G3s.wav"/>
+          <note measure="1" beat="2.60" duration="0.40" note="CompletePiano/D3s.wav"/>
+
+          <note measure="2" beat="2" duration="0.4" note="CompletePiano/A1#s.wav"/>
+          <note measure="2" beat="2" duration="0.4" note="CompletePiano/A2#s.wav"/>
+
+          <note measure="2" beat="3" duration="0.4" note="CompletePiano/D2s.wav"/>
+          <note measure="2" beat="3" duration="0.4" note="CompletePiano/D3s.wav"/>
+
+          <note measure="3" beat="2" duration="0.4" note="CompletePiano/D4.wav"/>
+          <note measure="3" beat="2" duration="0.4" note="CompletePiano/A3#s.wav"/>
+          <note measure="3" beat="2" duration="0.4" note="CompletePiano/G3s.wav"/>
+          <note measure="3" beat="2" duration="0.4" note="CompletePiano/D3s.wav"/>
+
+          <note measure="4" beat="1" duration="0.4" note="CompletePiano/A1#s.wav"/>
+          <note measure="4" beat="1" duration="0.4" note="CompletePiano/A2#s.wav"/>
+
+          <note measure="4" beat="2" duration="0.4" note="CompletePiano/D4s.wav"/>
+          <note measure="4" beat="2" duration="0.4" note="CompletePiano/A3#s.wav"/>
+          <note measure="4" beat="2" duration="0.4" note="CompletePiano/G3s.wav"/>
+          <note measure="4" beat="2" duration="0.4" note="CompletePiano/D3s.wav"/>
+
+          <note measure="5" beat="1" duration="0.5" note="CompletePiano/G1s.wav"/>
+          <note measure="5" beat="1" duration="0.5" note="CompletePiano/G2s.wav"/>
+          <note measure="5" beat="1" duration="0.5" note="CompletePiano/G3s.wav"/>
+
+          <note measure="5" beat="2" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="5" beat="2" duration="0.33" note="CompletePiano/A3#s.wav"/>
+          <note measure="5" beat="2" duration="0.33" note="CompletePiano/G3s.wav"/>
+          <note measure="5" beat="2" duration="0.33" note="CompletePiano/D3s.wav"/>
+
+          <note measure="5" beat="2.33" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="5" beat="2.33" duration="0.33" note="CompletePiano/A3#s.wav"/>
+          <note measure="5" beat="2.33" duration="0.33" note="CompletePiano/G3.wav"/>
+          <note measure="5" beat="2.33" duration="0.33" note="CompletePiano/D3.wav"/>
+
+          <note measure="5" beat="2.6" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="5" beat="2.6" duration="0.33" note="CompletePiano/A3#s.wav"/>
+          <note measure="5" beat="2.6" duration="0.33" note="CompletePiano/G3s.wav"/>
+          <note measure="5" beat="2.6" duration="0.33" note="CompletePiano/D3s.wav"/>
+
+          <note measure="6" beat="2" duration="0.33" note="CompletePiano/A1s.wav"/>
+          <note measure="6" beat="2" duration="0.33" note="CompletePiano/A2s.wav"/>
+          <note measure="6" beat="2.33" duration="0.33" note="CompletePiano/A1#s.wav"/>
+          <note measure="6" beat="2.33" duration="0.33" note="CompletePiano/A2#s.wav"/>
+          <note measure="6" beat="2.6" duration="0.33" note="CompletePiano/D2s.wav"/>
+          <note measure="6" beat="2.6" duration="0.33" note="CompletePiano/D3s.wav"/>
+
+          <note measure="7" beat="2" duration="0.4" note="CompletePiano/D4s.wav"/>
+          <note measure="7" beat="2" duration="0.4" note="CompletePiano/A3#s.wav"/>
+          <note measure="7" beat="2" duration="0.4" note="CompletePiano/G3s.wav"/>
+          <note measure="7" beat="2" duration="0.4" note="CompletePiano/D3s.wav"/>
+
+          <note measure="8" beat="1" duration="0.4" note="CompletePiano/A1#s.wav"/>
+          <note measure="8" beat="1" duration="0.4" note="CompletePiano/A2#s.wav"/>
+
+          <note measure="8" beat="2" duration="0.4" note="CompletePiano/D4s.wav"/>
+          <note measure="8" beat="2" duration="0.4" note="CompletePiano/A3#s.wav"/>
+          <note measure="8" beat="2" duration="0.4" note="CompletePiano/G3s.wav"/>
+          <note measure="8" beat="2" duration="0.4" note="CompletePiano/D3s.wav"/>
+
+          <note measure="9" beat="1" duration="0.5" note="CompletePiano/G1s.wav"/>
+          <note measure="9" beat="1" duration="0.5" note="CompletePiano/G2s.wav"/>
+          <note measure="9" beat="1" duration="0.5" note="CompletePiano/G3s.wav"/>
+
+          <note measure="9" beat="2" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="9" beat="2" duration="0.33" note="CompletePiano/A3#s.wav"/>
+          <note measure="9" beat="2" duration="0.33" note="CompletePiano/G3s.wav"/>
+          <note measure="9" beat="2" duration="0.33" note="CompletePiano/D3s.wav"/>
+
+          <note measure="9" beat="2.33" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="9" beat="2.33" duration="0.33" note="CompletePiano/A3#s.wav"/>
+          <note measure="9" beat="2.33" duration="0.33" note="CompletePiano/G3s.wav"/>
+          <note measure="9" beat="2.33" duration="0.33" note="CompletePiano/D3s.wav"/>
+
+          <note measure="9" beat="2.6" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="9" beat="2.6" duration="0.33" note="CompletePiano/A3#s.wav"/>
+          <note measure="9" beat="2.6" duration="0.33" note="CompletePiano/G3s.wav"/>
+          <note measure="9" beat="2.6" duration="0.33" note="CompletePiano/D3s.wav"/>
+
+          <note measure="10" beat="2" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="10" beat="2" duration="0.33" note="CompletePiano/D3s.wav"/>
+          <note measure="10" beat="2.33" duration="0.33" note="CompletePiano/F4s.wav"/>
+          <note measure="10" beat="2.33" duration="0.33" note="CompletePiano/F3s.wav"/>
+          <note measure="10" beat="2.6" duration="0.33" note="CompletePiano/G2s.wav"/>
+          <note measure="10" beat="2.6" duration="0.33" note="CompletePiano/G3.wav"/>
+          <note measure="10" beat="2.6" duration="0.33" note="CompletePiano/G4s.wav"/>
+
+          <note measure="11" beat="2" duration="0.33" note="CompletePiano/A4#s.wav"/>
+          <note measure="11" beat="2" duration="0.33" note="CompletePiano/G4s.wav"/>
+          <note measure="11" beat="2" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="11" beat="2" duration="0.33" note="CompletePiano/A3#s.wav"/>
+          <note measure="11" beat="2" duration="0.33" note="CompletePiano/D3s.wav"/>
+
+          <note measure="11" beat="2.33" duration="0.33" note="CompletePiano/A4#s.wav"/>
+          <note measure="11" beat="2.33" duration="0.33" note="CompletePiano/G4s.wav"/>
+          <note measure="11" beat="2.33" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="11" beat="2.33" duration="0.33" note="CompletePiano/A3#s.wav"/>
+          <note measure="11" beat="2.33" duration="0.33" note="CompletePiano/D3s.wav"/>
+
+          <note measure="11" beat="2.6" duration="0.33" note="CompletePiano/A4#s.wav"/>
+          <note measure="11" beat="2.6" duration="0.33" note="CompletePiano/G4s.wav"/>
+          <note measure="11" beat="2.6" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="11" beat="2.6" duration="0.33" note="CompletePiano/A3#s.wav"/>
+          <note measure="11" beat="2.6" duration="0.33" note="CompletePiano/D3s.wav"/>
+
+          <note measure="12" beat="2" duration="0.33" note="CompletePiano/A2#s.wav"/>
+          <note measure="12" beat="2" duration="0.33" note="CompletePiano/A3#s.wav"/>
+          <note measure="12" beat="2.33" duration="0.33" note="CompletePiano/D3s.wav"/>
+          <note measure="12" beat="2.33" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="12" beat="2.6" duration="0.33" note="CompletePiano/F2s.wav"/>
+          <note measure="12" beat="2.6" duration="0.33" note="CompletePiano/F3s.wav"/>
+          <note measure="12" beat="2.6" duration="0.33" note="CompletePiano/F4s.wav"/>
+
+          <note measure="13" beat="2" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="13" beat="2" duration="0.33" note="CompletePiano/A3#s.wav"/>
+          <note measure="13" beat="2" duration="0.33" note="CompletePiano/D3s.wav"/>
+          <note measure="13" beat="2" duration="0.33" note="CompletePiano/A2#s.wav"/>
+          <note measure="13" beat="2" duration="0.33" note="CompletePiano/D2s.wav"/>
+
+          <note measure="13" beat="2.33" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="13" beat="2.33" duration="0.33" note="CompletePiano/A3#s.wav"/>
+          <note measure="13" beat="2.33" duration="0.33" note="CompletePiano/D3s.wav"/>
+          <note measure="13" beat="2.33" duration="0.33" note="CompletePiano/A2#s.wav"/>
+          <note measure="13" beat="2.33" duration="0.33" note="CompletePiano/D2s.wav"/>
+
+          <note measure="13" beat="2.6" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="13" beat="2.6" duration="0.33" note="CompletePiano/A3#s.wav"/>
+          <note measure="13" beat="2.6" duration="0.33" note="CompletePiano/D3s.wav"/>
+          <note measure="13" beat="2.6" duration="0.33" note="CompletePiano/A2#s.wav"/>
+          <note measure="13" beat="2.6" duration="0.33" note="CompletePiano/D2s.wav"/>
+
+          <note measure="14" beat="2" duration="0.33" note="CompletePiano/A3#s.wav"/>
+          <note measure="14" beat="2" duration="0.33" note="CompletePiano/A4#s.wav"/>
+          <note measure="14" beat="2.33" duration="0.33" note="CompletePiano/D3s.wav"/>
+          <note measure="14" beat="2.33" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="14" beat="2.6" duration="0.33" note="CompletePiano/D2#s.wav"/>
+          <note measure="14" beat="2.6" duration="0.33" note="CompletePiano/D3#s.wav"/>
+          <note measure="14" beat="2.6" duration="0.33" note="CompletePiano/D4#s.wav"/>
+
+          <note measure="15" beat="2" duration="0.33" note="CompletePiano/G5s.wav"/>
+          <note measure="15" beat="2" duration="0.33" note="CompletePiano/C5s.wav"/>
+          <note measure="15" beat="2" duration="0.33" note="CompletePiano/G4s.wav"/>
+          <note measure="15" beat="2" duration="0.33" note="CompletePiano/C4s.wav"/>
+          <note measure="15" beat="2" duration="0.33" note="CompletePiano/A3s.wav"/>
+          <note measure="15" beat="2" duration="0.33" note="CompletePiano/G3s.wav"/>
+
+          <note measure="15" beat="2.33" duration="0.33" note="CompletePiano/G5s.wav"/>
+          <note measure="15" beat="2.33" duration="0.33" note="CompletePiano/C5s.wav"/>
+          <note measure="15" beat="2.33" duration="0.33" note="CompletePiano/G5s.wav"/>
+          <note measure="15" beat="2.33" duration="0.33" note="CompletePiano/C4s.wav"/>
+          <note measure="15" beat="2.33" duration="0.33" note="CompletePiano/A3s.wav"/>
+          <note measure="15" beat="2.33" duration="0.33" note="CompletePiano/G3s.wav"/>
+
+          <note measure="15" beat="2.6" duration="0.33" note="CompletePiano/G5s.wav"/>
+          <note measure="15" beat="2.6" duration="0.33" note="CompletePiano/C5s.wav"/>
+          <note measure="15" beat="2.6" duration="0.33" note="CompletePiano/G5s.wav"/>
+          <note measure="15" beat="2.6" duration="0.33" note="CompletePiano/C4s.wav"/>
+          <note measure="15" beat="2.6" duration="0.33" note="CompletePiano/A3s.wav"/>
+          <note measure="15" beat="2.6" duration="0.33" note="CompletePiano/G3s.wav"/>
+
+          <note measure="16" beat="2" duration="0.33" note="CompletePiano/G2s.wav"/>
+          <note measure="16" beat="2" duration="0.33" note="CompletePiano/G3s.wav"/>
+          <note measure="16" beat="2.33" duration="0.33" note="CompletePiano/A2s.wav"/>
+          <note measure="16" beat="2.33" duration="0.33" note="CompletePiano/A3s.wav"/>
+          <note measure="16" beat="2.6" duration="0.33" note="CompletePiano/D2s.wav"/>
+          <note measure="16" beat="2.6" duration="0.33" note="CompletePiano/D3s.wav"/>
+          <note measure="16" beat="2.6" duration="0.33" note="CompletePiano/D4s.wav"/>
+
+          <note measure="17" beat="2" duration="0.33" note="CompletePiano/F#5s.wav"/>
+          <note measure="17" beat="2" duration="0.33" note="CompletePiano/D5s.wav"/>
+          <note measure="17" beat="2" duration="0.33" note="CompletePiano/F#4s.wav"/>
+          <note measure="17" beat="2" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="17" beat="2" duration="0.33" note="CompletePiano/A3s.wav"/>
+          <note measure="17" beat="2" duration="0.33" note="CompletePiano/F#3s.wav"/>
+
+          <note measure="17" beat="2.33" duration="0.33" note="CompletePiano/F#5s.wav"/>
+          <note measure="17" beat="2.33" duration="0.33" note="CompletePiano/D5s.wav"/>
+          <note measure="17" beat="2.33" duration="0.33" note="CompletePiano/F#4s.wav"/>
+          <note measure="17" beat="2.33" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="17" beat="2.33" duration="0.33" note="CompletePiano/A3s.wav"/>
+          <note measure="17" beat="2.33" duration="0.33" note="CompletePiano/F#3s.wav"/>
+
+          <note measure="17" beat="2.6" duration="0.33" note="CompletePiano/F#5s.wav"/>
+          <note measure="17" beat="2.6" duration="0.33" note="CompletePiano/D5s.wav"/>
+          <note measure="17" beat="2.6" duration="0.33" note="CompletePiano/F#4s.wav"/>
+          <note measure="17" beat="2.6" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="17" beat="2.6" duration="0.33" note="CompletePiano/A3s.wav"/>
+          <note measure="17" beat="2.6" duration="0.33" note="CompletePiano/F#3s.wav"/>
+
+          <note measure="18" beat="2" duration="0.4" note="CompletePiano/F#1s.wav"/>
+          <note measure="18" beat="2" duration="0.4" note="CompletePiano/F#2s.wav"/>
+          <note measure="18" beat="2" duration="0.4" note="CompletePiano/F#3s.wav"/>
+
+          <note measure="19" beat="1" duration="0.4" note="CompletePiano/A1#s.wav"/>
+          <note measure="19" beat="1" duration="0.4" note="CompletePiano/A2#s.wav"/>
+          <note measure="19" beat="1" duration="0.4" note="CompletePiano/A3#s.wav"/>
+
+          <note measure="19" beat="2" duration="0.4" note="CompletePiano/E4s.wav"/>
+          <note measure="19" beat="2" duration="0.4" note="CompletePiano/D4s.wav"/>
+          <note measure="19" beat="2" duration="0.4" note="CompletePiano/A3#s.wav"/>
+          <note measure="19" beat="2" duration="0.4" note="CompletePiano/E3s.wav"/>
+          <note measure="19" beat="2" duration="0.4" note="CompletePiano/D3s.wav"/>
+
+          <note measure="20" beat="1" duration="0.4" note="CompletePiano/G1s.wav"/>
+          <note measure="20" beat="1" duration="0.4" note="CompletePiano/G2s.wav"/>
+          <note measure="20" beat="1" duration="0.4" note="CompletePiano/G3s.wav"/>
+
+          <note measure="20" beat="2" duration="0.4" note="CompletePiano/E4s.wav"/>
+          <note measure="20" beat="2" duration="0.4" note="CompletePiano/D4s.wav"/>
+          <note measure="20" beat="2" duration="0.4" note="CompletePiano/A3#s.wav"/>
+          <note measure="20" beat="2" duration="0.4" note="CompletePiano/E3s.wav"/>
+          <note measure="20" beat="2" duration="0.4" note="CompletePiano/D3s.wav"/>
+
+          <note measure="21" beat="1" duration="0.4" note="CompletePiano/D1s.wav"/>
+          <note measure="21" beat="1" duration="0.4" note="CompletePiano/D2s.wav"/>
+          <note measure="21" beat="1" duration="0.4" note="CompletePiano/D3s.wav"/>
+
+          <note measure="21" beat="2" duration="0.33" note="CompletePiano/D5s.wav"/>
+          <note measure="21" beat="2" duration="0.33" note="CompletePiano/F#4s.wav"/>
+          <note measure="21" beat="2" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="21" beat="2" duration="0.33" note="CompletePiano/A3s.wav"/>
+          <note measure="21" beat="2" duration="0.33" note="CompletePiano/F#3s.wav"/>
+          <note measure="21" beat="2" duration="0.33" note="CompletePiano/A2s.wav"/>
+
+          <note measure="21" beat="2.33" duration="0.33" note="CompletePiano/D5s.wav"/>
+          <note measure="21" beat="2.33" duration="0.33" note="CompletePiano/F#4s.wav"/>
+          <note measure="21" beat="2.33" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="21" beat="2.33" duration="0.33" note="CompletePiano/A3s.wav"/>
+          <note measure="21" beat="2.33" duration="0.33" note="CompletePiano/F#3s.wav"/>
+          <note measure="21" beat="2.33" duration="0.33" note="CompletePiano/A2s.wav"/>
+
+          <note measure="21" beat="2.6" duration="0.33" note="CompletePiano/D5s.wav"/>
+          <note measure="21" beat="2.6" duration="0.33" note="CompletePiano/F#4s.wav"/>
+          <note measure="21" beat="2.6" duration="0.33" note="CompletePiano/D4s.wav"/>
+          <note measure="21" beat="2.6" duration="0.33" note="CompletePiano/A3s.wav"/>
+          <note measure="21" beat="2.6" duration="0.33" note="CompletePiano/F#3s.wav"/>
+          <note measure="21" beat="2.6" duration="0.33" note="CompletePiano/A2s.wav"/>
+     </instrument>
+</score>
