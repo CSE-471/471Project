@@ -19,6 +19,8 @@ public:
 	//! Set the sine wave amplitude
 	void SetAmplitude(double a) { m_amp = a; }
 
+	void SetPhase(double p) { m_phase = p; }
+
 	double GetPrev() { return m_prev; }
 
 private:

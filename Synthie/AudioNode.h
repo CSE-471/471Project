@@ -13,6 +13,7 @@ public:
 	//! Cause one sample to be generated
 	virtual bool Generate() = 0;
 
+
 	//! Get the sample rate in samples per second
 	double GetSampleRate() { return m_sampleRate; }
 

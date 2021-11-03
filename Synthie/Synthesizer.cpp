@@ -263,6 +263,7 @@ void CSynthesizer::OpenScore(CString & filename)
 	if (!succeeded)
 	{
 		AfxMessageBox(L"Failed to create an XML document to use");
+		AfxMessageBox(L"Failed to create an XML document to use");
 		return;
 	}
 

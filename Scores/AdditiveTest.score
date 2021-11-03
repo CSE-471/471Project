@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<score bpm="120" beatspermeasure="2">
+     <instrument instrument="Additive">
+                  <note measure="1" beat="1.5" duration="2" note="D#4" a1="1" a3="1" a5="1" a7="1" vibrato="5 10" />
+
+                  <note measure="2" beat="1.5" duration="2" vibrato="10 10" note="D#4" a1="1" a2="1" a3="1" a4="1" a5="1" a6="1" a7="1" a8="1"/>
+		  		  
+
+		  
+     </instrument>
+</score>

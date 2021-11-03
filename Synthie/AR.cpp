@@ -26,6 +26,8 @@ bool CAR::Generate()
 	// Tell the component to generate an audio sample
 	m_source->Generate();
 
+	// Make new CAR function, GenerateAdditive, which will be called when b1 exists
+
 	// Read the component's sample and make it our resulting frame.
 	if (m_time <  m_attack)
 	{
@@ -50,3 +52,4 @@ bool CAR::Generate()
 	// We return true until the time reaches the duration.
 	return m_time < m_duration;
 }
+
