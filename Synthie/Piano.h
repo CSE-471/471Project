@@ -56,9 +56,10 @@ private:
     std::vector<CNote> m_notes;
 
     double m_beat = 0;
-    double m_duration = 0;
+    double m_duration = 0.1;
+    double m_time;
     int m_index;
-    int m_sampletotal;
+    int m_sampletotal = 0;
 
     bool m_pedal = false;
     std::vector<short> m_waves;

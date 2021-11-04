@@ -122,17 +122,10 @@ bool CSynthesizer::Generate(double * frame)
 		m_currentNote++;
 	}
 	//
-	// Phase 2: Clear all channels to silence 
-	//
-	double channelframes[5][2];
-	for (int i = 0; i < 5; i++)
-	{
-		for (int c = 0; c < GetNumChannels(); c++)
-		{
-			channelframes[i][c] = 0;
-		}
-	}
-	for (int c = 0; c<GetNumChannels(); c++)
+    // Phase 2: Clear all channels to silence 
+    //
+
+	for (int c = 0; c < GetNumChannels(); c++)
 	{
 		frame[c] = 0;
 	}
@@ -148,34 +141,24 @@ bool CSynthesizer::Generate(double * frame)
 	// returns false), we remove it from the list.
 	//
 
-	for (list<CInstrument *>::iterator node = m_instruments.begin(); node != m_instruments.end();)
+	for (list<CInstrument*>::iterator node = m_instruments.begin(); node != m_instruments.end(); )
 	{
 		// Since we may be removing an item from the list, we need to know in 
 		// advance, what is after it in the list.  We keep that node as "next"
-		list<CInstrument *>::iterator next = node;
+		list<CInstrument*>::iterator next = node;
 		next++;
 
 		// Get a pointer to the allocated instrument
-		CInstrument *instrument = *node;
+		CInstrument* instrument = *node;
 
 		// Call the generate function
 		if (instrument->Generate())
 		{
-			// Send the XML send attribute to the instrument m_sends array
-			instrument->SetSend(0, m_send0);
-			instrument->SetSend(1, m_send1);
-			instrument->SetSend(2, m_send2);
-			instrument->SetSend(3, m_send3);
-			instrument->SetSend(4, m_send4);
-
 			// If we returned true, we have a valid sample.  Add it 
-			// to the frame for each channel
-			for (int i = 0; i < 5; i++)
+			// to the frame.
+			for (int c = 0; c < GetNumChannels(); c++)
 			{
-				for (int c = 0; c < GetNumChannels(); c++)
-				{
-					channelframes[i][c] += instrument->Frame(c) * instrument->Send(i);
-				}
+				frame[c] += instrument->Frame(c);
 			}
 		}
 		else
@@ -186,49 +169,11 @@ bool CSynthesizer::Generate(double * frame)
 			delete instrument;
 		}
 
-		//
-		// Phase 3a: Effects
-		// 
-		double frames[2];
-		for (int i = 0; i < GetNumChannels(); i++)
-		{
-			frames[i] = channelframes[0][i];
-		}
-		//Add code here for 4 effects Noise Gate, Compressor, ..., and ...
-		// Noise Gate effect frames
-		double noise_gate_frames[2];
-		noise_gate_frames[0] = 0;
-		noise_gate_frames[1] = 0;
-
-		// Compression effect frames
-		double compression_frames[2];
-		compression_frames[0] = 0;
-		compression_frames[1] = 0;
-
-		// Process effect here
-		// Noise gate
-		if (channelframes[1][0] != 0)
-		{
-			m_noise_gate.Process(channelframes[1], noise_gate_frames);
-		}
-		// Compression
-		else if (channelframes[2][0] != 0)
-		{
-			m_compression.Process(channelframes[2], compression_frames);
-		}
-		
-
-		// Sum all effects to frames
-		for (int i = 0; i < GetNumChannels(); i++)
-		{
-			frame[i] += frame[i];
-			frame[i] += noise_gate_frames[i];
-			frame[i] += compression_frames[i];
-		}
-
 		// Move to the next instrument in the list
 		node = next;
 	}
+
+
 	//
 	// Phase 4: Advance the time and beats
 	//
