@@ -137,6 +137,7 @@ bool CPianoSys::OpenWavFile(const char* filename)
 		AfxMessageBox(mes);
 	}
 
+	file.Close();
 	return opened;
 }
 
