@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "CAdditive.h"
 #include "Notes.h"
+
 #include <string>
 #include <vector>
 
@@ -99,40 +100,6 @@ void CAdditive::SetNote(CNote* note)
 			m_vFreq = value.dblVal;
 			m_additive.SetVibFreq(m_vFreq);
 		}
-		//else if (name == "vibrato")
-		//{
-		//	// Need to extract both vibrato components
-		//	wstring comp(value.bstrVal);
-		//	wstring vString(comp.begin(), comp.end());
-
-		//	wstring component;
-		//	vector<wstring> vComponent;
-		//	for (int i = 0; i <= vString.size(); i++)
-		//	{
-		//		if (vString[i] != ' ')
-		//		{
-		//			component += vString[i];
-		//		}
-		//		else if (vString[i] == ' ' && component.size() >= 1)
-		//		{
-		//			vComponent.push_back(component);
-		//			component.clear();
-		//		}
-		//	}
-
-		//	if (component.size() >= 1)
-		//	{
-		//		vComponent.push_back(component);
-		//		component.clear();
-		//	}
-
-		//	m_vAmp = stof(vComponent[0]);
-		//	m_vFreq = stof(vComponent[1]);
-
-		//	m_additive.SetVibAmp(m_vAmp);
-
-		//	m_additive.SetVibFreq(m_vFreq);
-		//}
 		else if (name == "a1")
 		{
 			value.ChangeType(VT_R8);
