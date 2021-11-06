@@ -20,9 +20,12 @@ public:
 
     // Destructor
     ~CPiano();
+    
+    //Constructor that accepts bpm 
+    CPiano(double bpm);
 
     // Set up values to prepare piano audio 
-    void Start(void);
+    virtual void Start(void);
 
     // Set an individual note for piano 
     virtual void SetNote(CNote* note);
@@ -30,7 +33,6 @@ public:
     // Generate function overrided 
     virtual bool Generate();
 
-    void SetBeat(double beat) { m_beat = beat; }
     void SetDuration(double duration) { m_duration = duration; }
     void SetPedal(bool pedal) { m_pedal = pedal; }
     void SetWaves(std::vector<short> waves) { m_waves = waves; }
@@ -55,8 +57,8 @@ private:
     // Collection of notes used for piano
     std::vector<CNote> m_notes;
 
-    double m_beat = 0;
-    double m_duration = 0;
+    double m_duration;
+    double m_time;
     int m_index;
     int m_sampletotal;
 

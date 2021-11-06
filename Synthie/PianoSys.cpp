@@ -15,7 +15,6 @@
 */
 CPianoSys::CPianoSys()
 {
-	m_beat = 0;
 	m_duration = 0;
 	m_pedalpress = false;
 }
@@ -32,7 +31,7 @@ CPianoSys::~CPianoSys()
 /**
 * Set the piano instrument in this system 
 */
-CPiano* CPianoSys::SetPiano(CNote* note)
+CPiano* CPianoSys::SetPiano(CNote* note, double bpm)
 {
 	// Create a piano instrument 
 	CPiano* piano = new CPiano();
@@ -65,18 +64,12 @@ CPiano* CPianoSys::SetPiano(CNote* note)
 		attrib->get_nodeValue(&value);
 
 
-		// Find beat, duration and pedal 
-
-		if (name == L"beat")
-		{
-			value.ChangeType(VT_R8);
-			m_beat = value.dblVal;
-		}
+		// duration and pedal 
 
 		if (name == L"duration")
 		{
 			value.ChangeType(VT_R8);
-			m_duration = value.dblVal;
+			m_duration = value.dblVal * (NUM_SECS_IN_MINUTE / bpm);
 		}
 
 		if (name == L"pedald")
@@ -99,7 +92,6 @@ CPiano* CPianoSys::SetPiano(CNote* note)
 		}
 	}
 
-	piano->SetBeat(m_beat);
 	piano->SetDuration(m_duration);
 	piano->SetPedal(m_pedalpress);
 	piano->SetWaves(m_waves);
@@ -137,6 +129,7 @@ bool CPianoSys::OpenWavFile(const char* filename)
 		AfxMessageBox(mes);
 	}
 
+	file.Close();
 	return opened;
 }
 

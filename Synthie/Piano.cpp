@@ -16,7 +16,8 @@
 */
 CPiano::CPiano()
 {
-
+	m_duration = 1.0;
+	m_sampletotal = 0;
 }
 
 /**
@@ -32,9 +33,9 @@ CPiano::~CPiano()
 */
 void CPiano::Start()
 {
-	SetSampleRate(GetSampleRate());
 	m_index = 0;
-	m_sampletotal = 0;
+	m_time = 0;
+	m_sampletotal = int(m_waves.size());
 }
 
 /**
@@ -42,25 +43,30 @@ void CPiano::Start()
 */
 bool CPiano::Generate()
 {
-	bool gen = false;
+	bool valid = false;
 
 	if (m_index < m_sampletotal)
 	{
-		gen = true;
-		m_frame[0] = m_waves[m_index] * 32768;
+		valid = true;
+		m_frame[0] = m_waves.at(m_index) / 32768.0;
 		m_frame[1] = m_frame[0];
 		m_index += 1;
 	}
 	else 
 	{
-		gen = false;
+		valid = false;
 		m_frame[0] = 0;
 		m_frame[1] = m_frame[0];
-		m_index = 0;
+		//m_index = 0;
 	}
 
+	m_time += GetSamplePeriod();
+	if (m_time >= m_duration)
+	{
+		valid = false;
+	}
 
-	return gen;
+	return valid;
 }
 
 /**
@@ -69,5 +75,4 @@ bool CPiano::Generate()
 
 void CPiano::SetNote(CNote* note)
 {
-	m_sampletotal = int(m_waves.size());
 }
