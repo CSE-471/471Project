@@ -19,8 +19,10 @@ public:
 	// Destructor
 	~CPianoSys();
 
+	const double NUM_SECS_IN_MINUTE = 60.0;
+
 	// Set the piano instrument in this system 
-	CPiano* SetPiano(CNote* note);
+	CPiano* SetPiano(CNote* note, double bpm);
 
 	bool OpenWavFile(const char* filename);
 
@@ -30,7 +32,6 @@ public:
 
 private:
 	std::vector<short> m_waves;
-	double m_beat;
 	double m_duration;
 	bool m_pedalpress;
 };

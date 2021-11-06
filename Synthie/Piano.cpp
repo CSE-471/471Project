@@ -16,7 +16,8 @@
 */
 CPiano::CPiano()
 {
-
+	m_duration = 1.0;
+	m_sampletotal = 0;
 }
 
 /**
@@ -32,7 +33,6 @@ CPiano::~CPiano()
 */
 void CPiano::Start()
 {
-	SetSampleRate(GetSampleRate());
 	m_index = 0;
 	m_time = 0;
 	m_sampletotal = int(m_waves.size());
@@ -57,7 +57,7 @@ bool CPiano::Generate()
 		valid = false;
 		m_frame[0] = 0;
 		m_frame[1] = m_frame[0];
-		m_index = 0;
+		//m_index = 0;
 	}
 
 	m_time += GetSamplePeriod();
