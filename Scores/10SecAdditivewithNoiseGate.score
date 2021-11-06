@@ -28,8 +28,8 @@
      </instrument>
 
   <instrument instrument="NoiseGate">
-    <note measure="1" delay=".0025" wet="1" dry="0" threshold=".1" />
-    <note measure="2" delay=".0025" wet=".75" dry=".25" threshold=".1" />
-    <note measure="2" delay=".0025" wet=".5" dry=".5" threshold=".1" />
+    <note measure="1" delay=".0025" wet="5" dry="2" threshold="3000000000" />
+    <note measure="2" delay=".0025" wet="5.75" dry="3.25" threshold="3000000000" />
+    <note measure="2" delay=".0025" wet="6.5" dry="4.5" threshold="3000000000" />
   </instrument>
 </score>
