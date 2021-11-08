@@ -117,7 +117,6 @@ bool CPianoSys::OpenWavFile(const char* filename)
 			short audio[2];
 			file.ReadFrame(audio);
 			m_waves.push_back(audio[0]);
-
 		}
 	}
 

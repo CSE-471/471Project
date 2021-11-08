@@ -45,27 +45,21 @@ bool CPiano::Generate()
 {
 	bool valid = false;
 
-	if (m_index < m_sampletotal)
+	if (m_index < m_sampletotal && m_time < m_duration)
 	{
 		valid = true;
 		m_frame[0] = m_waves.at(m_index) / 32768.0;
-		m_frame[1] = m_frame[0];
+		m_frame[1] = m_waves.at(m_index) / 32768.0;
 		m_index += 1;
 	}
 	else 
 	{
 		valid = false;
 		m_frame[0] = 0;
-		m_frame[1] = m_frame[0];
-		//m_index = 0;
+		m_frame[1] = 0;
 	}
 
-	m_time += GetSamplePeriod();
-	if (m_time >= m_duration)
-	{
-		valid = false;
-	}
-
+	m_time = m_time + GetSamplePeriod();
 	return valid;
 }
 

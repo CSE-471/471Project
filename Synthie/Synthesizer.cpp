@@ -121,6 +121,7 @@ bool CSynthesizer::Generate(double * frame)
 
 		m_currentNote++;
 	}
+
 	//
 	// Phase 2: Clear all channels to silence 
 	//
@@ -132,6 +133,7 @@ bool CSynthesizer::Generate(double * frame)
 			channelframes[i][c] = 0;
 		}
 	}
+
 	for (int c = 0; c<GetNumChannels(); c++)
 	{
 		frame[c] = 0;

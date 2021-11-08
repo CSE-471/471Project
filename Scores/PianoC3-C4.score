@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <score bpm="120" beatspermeasure="2">
      <instrument instrument="Piano">
-           <note measure="1" beat="1" duration="0.5" note="CompletePiano/C3s.wav"/>
-           <note measure="2" beat="1" duration="0.5" note="CompletePiano/D3s.wav"/>
-           <note measure="3" beat="1" duration="0.5" note="CompletePiano/E3s.wav"/>
-           <note measure="4" beat="1" duration="0.5" note="CompletePiano/F3s.wav"/>
-           <note measure="5" beat="1" duration="0.5" note="CompletePiano/G3s.wav"/>
-           <note measure="6" beat="1" duration="0.5" note="CompletePiano/A3s.wav"/>	
-           <note measure="7" beat="1" duration="0.5" note="CompletePiano/B3s.wav"/>
-           <note measure="8" beat="1" duration="0.5" note="CompletePiano/C4s.wav"/>
+           <note measure="1" beat="1" duration="1" note="CompletePiano/C3s.wav"/>
+           <note measure="2" beat="1" duration="1" note="CompletePiano/D3s.wav"/>
+           <note measure="3" beat="1" duration="1" note="CompletePiano/E3s.wav"/>
+           <note measure="4" beat="1" duration="1" note="CompletePiano/F3s.wav"/>
+           <note measure="5" beat="1" duration="1" note="CompletePiano/G3s.wav"/>
+           <note measure="6" beat="1" duration="1" note="CompletePiano/A3s.wav"/>	
+           <note measure="7" beat="1" duration="1" note="CompletePiano/B3s.wav"/>
+           <note measure="8" beat="1" duration="1" note="CompletePiano/C4s.wav"/>
      </instrument>
 </score>

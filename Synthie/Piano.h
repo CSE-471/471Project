@@ -54,8 +54,6 @@ public:
 
 
 private:
-    // Collection of notes used for piano
-    std::vector<CNote> m_notes;
 
     double m_duration;
     double m_time;
