@@ -16,6 +16,7 @@
 CPianoSys::CPianoSys()
 {
 	m_duration = 0;
+	m_dynamic = 0;
 	m_pedalpress = false;
 }
 
@@ -72,16 +73,11 @@ CPiano* CPianoSys::SetPiano(CNote* note, double bpm)
 			m_duration = value.dblVal * (NUM_SECS_IN_MINUTE / bpm);
 		}
 
-		if (name == L"pedald")
+		if (name == "dynamic")
 		{
-			m_pedalpress = true;
+			value.ChangeType(VT_R8);
+			m_dynamic = value.dblVal;
 		}
-		
-		if (name == L"pedalu")
-		{
-			m_pedalpress = false;
-		}
-
 		// Now Load the wav file 
 		if (name == "note")
 		{
@@ -93,6 +89,7 @@ CPiano* CPianoSys::SetPiano(CNote* note, double bpm)
 	}
 
 	piano->SetDuration(m_duration);
+	piano->SetDynamic(m_dynamic);
 	piano->SetPedal(m_pedalpress);
 	piano->SetWaves(m_waves);
 
