@@ -133,8 +133,8 @@
 		<note measure="40" beat="3" duration="1" note="C3" a1=".5" />
 	</instrument>
 	<instrument instrument="Noise Gate">
-    		<note measure="1" delay=".0025" wet="1" dry="0" threshold=".1" />
-    		<note measure="2" delay=".0025" wet=".75" dry=".25" threshold=".1" />
-    		<note measure="2" delay=".0025" wet=".5" dry=".5" threshold=".1" />
+    		<note measure="1" delay=".0025" wet="1" dry="0" threshold="0.1" />
+    		<note measure="2" delay=".0025" wet=".75" dry=".25" threshold="0.1" />
+    		<note measure="2" delay=".0025" wet=".5" dry=".5" threshold="0.1" />
   	</instrument>
 </score>

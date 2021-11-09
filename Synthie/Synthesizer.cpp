@@ -100,7 +100,11 @@ bool CSynthesizer::Generate(double * frame)
 			m_compression.SetNote(note);
 			m_compression.Start();
 		}
-
+		else if (note->Instrument() == L"Chorus")
+		{
+			m_chorus.SetNote(note);
+			m_chorus.Start();
+		}
 		// Piano synthesizer is here 
 		else if (note-> Instrument() == L"Piano")
 		{
@@ -148,37 +152,37 @@ bool CSynthesizer::Generate(double * frame)
 	// returns false), we remove it from the list.
 	//
 
-	for (list<CInstrument*>::iterator node = m_instruments.begin(); node != m_instruments.end(); )
-	{
-		// Since we may be removing an item from the list, we need to know in 
-		// advance, what is after it in the list.  We keep that node as "next"
-		list<CInstrument*>::iterator next = node;
-		next++;
+	//for (list<CInstrument*>::iterator node = m_instruments.begin(); node != m_instruments.end(); )
+	//{
+	//	// Since we may be removing an item from the list, we need to know in 
+	//	// advance, what is after it in the list.  We keep that node as "next"
+	//	list<CInstrument*>::iterator next = node;
+	//	next++;
 
-		// Get a pointer to the allocated instrument
-		CInstrument* instrument = *node;
+	//	// Get a pointer to the allocated instrument
+	//	CInstrument* instrument = *node;
 
-		// Call the generate function
-		if (instrument->Generate())
-		{
-			// If we returned true, we have a valid sample.  Add it 
-			// to the frame.
-			for (int c = 0; c < GetNumChannels(); c++)
-			{
-				frame[c] += instrument->Frame(c);
-			}
-		}
-		else
-		{
-			// If we returned false, the instrument is done.  Remove it
-			// from the list and delete it from memory.
-			m_instruments.erase(node);
-			delete instrument;
-		}
+	//	// Call the generate function
+	//	if (instrument->Generate())
+	//	{
+	//		// If we returned true, we have a valid sample.  Add it 
+	//		// to the frame.
+	//		for (int c = 0; c < GetNumChannels(); c++)
+	//		{
+	//			frame[c] += instrument->Frame(c);
+	//		}
+	//	}
+	//	else
+	//	{
+	//		// If we returned false, the instrument is done.  Remove it
+	//		// from the list and delete it from memory.
+	//		m_instruments.erase(node);
+	//		delete instrument;
+	//	}
 
-		// Move to the next instrument in the list
-		node = next;
-	}
+	//	// Move to the next instrument in the list
+	//	node = next;
+	//}
 
 	for (list<CInstrument *>::iterator node = m_instruments.begin(); node != m_instruments.end();)
 	{
@@ -237,6 +241,12 @@ bool CSynthesizer::Generate(double * frame)
 		compression_frames[0] = 0;
 		compression_frames[1] = 0;
 
+		// Chorus effect frames
+		double chorus_frames[2];
+		chorus_frames[0] = 0;
+		chorus_frames[1] = 0;
+
+
 		// Process effect here
 		// Noise gate
 		if (channelframes[1][0] != 0)
@@ -248,14 +258,19 @@ bool CSynthesizer::Generate(double * frame)
 		{
 			m_compression.Process(channelframes[2], compression_frames);
 		}
-		
+		// Chorus
+		else if (channelframes[3][0] != 0)
+		{
+			m_chorus.Process(channelframes[3], chorus_frames);
+		}
 
 		// Sum all effects to frames
 		for (int i = 0; i < GetNumChannels(); i++)
 		{
-			frame[i] += frame[i];
-			frame[i] += noise_gate_frames[i];
+			frame[i] += frames[i];
+			frame[i] += //noise_gate_frames[i];
 			frame[i] += compression_frames[i];
+			//frame[i] += chorus_frames[i];
 		}
 
 		// Move to the next instrument in the list

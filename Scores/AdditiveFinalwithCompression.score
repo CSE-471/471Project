@@ -133,6 +133,6 @@
 		<note measure="40" beat="3" duration="1" note="C3" a1=".5" />
 	</instrument>
 	<instrument instrument="Compression">
-		<note measure="7" delay=".0025" wet="1" dry="0" threshold=".005" />
+		<note measure="7" delay=".0025" wet="2" dry="1" threshold=".5" />
   	</instrument>
 </score>

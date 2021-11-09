@@ -28,18 +28,24 @@ public:
 	// Get the delay value of the effect
 	double GetDelay() { return m_delay; }
 
+	// Get the rate value of the effect
+	double GetRate() { return m_rate; }
+
+	// Get the range value of the effect
+	double GetRange() { return m_range; }
+
 private:
 
 	// Controllable effects sends
-	double m_wet;
-	double m_dry;
+	double m_wet = 0;
+	double m_dry = 0;
 
 	// Threshold for noise gating and compression
 	double m_threshold;
 	double m_delay;
 
-	std::vector<double> m_queueL;
-	std::vector<double> m_queueR;
+	double m_rate;
+	double m_range;
 
 };
 

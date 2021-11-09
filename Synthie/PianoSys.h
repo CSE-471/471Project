@@ -33,6 +33,7 @@ public:
 private:
 	std::vector<short> m_waves;
 	double m_duration;
+	double m_dynamic;
 	bool m_pedalpress;
 };
 

@@ -10,7 +10,7 @@ public:
     ~CCompression();
 
     virtual void Process(double* frameIn, double* frameOut) override;
-
+ 
     //Start
     virtual void Start() override;
 
