@@ -218,9 +218,9 @@ bool CSynthesizer::Generate(double * frame)
 	//		delete instrument;
 	//	}
 
-	//	//
-	//	// Phase 3a: Effects
-	//	// 
+	////	//
+	////	// Phase 3a: Effects
+	////	// 
 	//	double frames[2];
 	//	for (int i = 0; i < GetNumChannels(); i++)
 	//	{
