@@ -1,6 +1,6 @@
 <score bpm="150" beatspermeasure="4">
 
-	<instrument instrument="Additive" send0="1.0" send1="0.3" send2="0.3" send3="0.5" send4 = "0.3">
+	<instrument instrument="Additive" send0="1.0" send1="0" send2="0" send3="0.5" send4 = "0">
 		<note measure="1" beat="1" duration="1" note="Db3" a1=".5" />
 		<note measure="1" beat="2.5" duration="0.5" note="Ab2" a1=".5" />
 		<note measure="1" beat="4" duration="1" note="Db3" a1=".5" />
@@ -133,7 +133,7 @@
 		<note measure="40" beat="3" duration="1" note="C3" a1=".5" />
 	</instrument>
 	<instrument instrument="Chorus">
-    		<note measure="1" delay="2" wet="1" dry="0" range = "10" rate = "5" />
+    		<note measure="1" delay="2" wet="1" dry="0" range = "20" rate = "5" />
 
   	</instrument>
 </score>

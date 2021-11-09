@@ -1,6 +1,6 @@
 <score bpm="150" beatspermeasure="4">
 
-	<instrument instrument="Additive" send0="1.0" send1="0.3" send2="0.3" send3="0.5" send4 = "0.3">
+	<instrument instrument="Additive" send0="1.0" send1="0.3" send2="0" send3="0" send4 = "0">
 		<note measure="1" beat="1" duration="1" note="Db3" a1=".5" />
 		<note measure="1" beat="2.5" duration="0.5" note="Ab2" a1=".5" />
 		<note measure="1" beat="4" duration="1" note="Db3" a1=".5" />
@@ -133,8 +133,8 @@
 		<note measure="40" beat="3" duration="1" note="C3" a1=".5" />
 	</instrument>
 	<instrument instrument="Noise Gate">
-    		<note measure="1" delay=".0025" wet="1" dry="0" threshold="0.5" />
-    		<note measure="2" delay=".0025" wet=".75" dry=".25" threshold="0.5" />
-    		<note measure="2" delay=".0025" wet=".5" dry=".5" threshold="0.5" />
+    		<note measure="1" delay=".0025" wet="1" dry="0" threshold="0.1" />
+    		<note measure="2" delay=".0025" wet=".75" dry=".25" threshold="0.1" />
+    		<note measure="2" delay=".0025" wet=".5" dry=".5" threshold="0.1" />
   	</instrument>
 </score>

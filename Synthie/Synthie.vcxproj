@@ -142,6 +142,7 @@
     <ClCompile Include="Chorus.cpp" />
     <ClCompile Include="CNoiseGate.cpp" />
     <ClCompile Include="Compression.cpp" />
+    <ClCompile Include="Flanger.cpp" />
     <ClCompile Include="Instrument.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="Note.cpp" />
@@ -175,6 +176,7 @@
     <ClInclude Include="Chorus.h" />
     <ClInclude Include="CNoiseGate.h" />
     <ClInclude Include="Compression.h" />
+    <ClInclude Include="Flanger.h" />
     <ClInclude Include="Instrument.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Note.h" />

@@ -15,7 +15,7 @@ void CChorus::Process(double* frameIn, double* frameOut)
 	double wet = GetWet();
 
 	// Calculate delay with the delay step
-	double delay_step = (m_range * m_delay) * sin(2 * PI * m_rate);
+	double delay_step = (m_range * m_delay) * sin(2 * M_PI * m_rate);
 	double new_delay = m_delay + delay_step;
 
 	mWrloc = (mWrloc + 1) % MAXQUEUESIZE;

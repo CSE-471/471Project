@@ -265,12 +265,12 @@ bool CSynthesizer::Generate(double * frame)
 				m_noise_gate.Process(channelframes[1], noise_gate_frames);
 			}
 			// Compression
-			else if (channelframes[2][0] != 0)
+			if (channelframes[2][0] != 0)
 			{
 				m_compression.Process(channelframes[2], compression_frames);
 			}
 			// Chorus
-			else if (channelframes[3][0] != 0)
+			if (channelframes[3][0] != 0)
 			{
 				m_chorus.Process(channelframes[3], chorus_frames);
 			}
@@ -279,8 +279,8 @@ bool CSynthesizer::Generate(double * frame)
 			for (int i = 0; i < GetNumChannels(); i++)
 			{
 				frame[i] += frames[i];
-				frame[i] += noise_gate_frames[i];
-				frame[i] += compression_frames[i];
+				//frame[i] += noise_gate_frames[i];
+				//frame[i] += compression_frames[i];
 				frame[i] += chorus_frames[i];
 			}
 
