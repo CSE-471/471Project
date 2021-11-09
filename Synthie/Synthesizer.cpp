@@ -110,6 +110,12 @@ bool CSynthesizer::Generate(double * frame)
 			m_chorus.Start();
 			m_callpiano = false;
 		}
+		else if (note->Instrument() == L"Flanger")
+		{
+			m_flanger.SetNote(note);
+			m_flanger.Start();
+			m_callpiano = false;
+		}
 		// Piano synthesizer is here 
 		else if (note-> Instrument() == L"Piano")
 		{
@@ -258,6 +264,11 @@ bool CSynthesizer::Generate(double * frame)
 			double chorus_frames[2];
 			chorus_frames[0] = 0;
 			chorus_frames[1] = 0;
+
+			double flanger_frames[2];
+			flanger_frames[0] = 0;
+			flanger_frames[1] = 0;
+
 			// Process effect here
 			// Noise gate
 			if (channelframes[1][0] != 0)
@@ -274,14 +285,20 @@ bool CSynthesizer::Generate(double * frame)
 			{
 				m_chorus.Process(channelframes[3], chorus_frames);
 			}
+			// Flanger
+			if (channelframes[4][0] != 0)
+			{
+				m_flanger.Process(channelframes[4], flanger_frames);
+			}
 
 			// Sum all effects to frames
 			for (int i = 0; i < GetNumChannels(); i++)
 			{
 				frame[i] += frames[i];
-				frame[i] += noise_gate_frames[i];
+				//frame[i] += noise_gate_frames[i];
 				//frame[i] += compression_frames[i];
 				//frame[i] += chorus_frames[i];
+				frame[i] += flanger_frames[i];
 			}
 
 			// Move to the next instrument in the list

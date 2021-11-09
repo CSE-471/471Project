@@ -15,8 +15,14 @@ public:
     virtual bool Generate() override;
 
 private:
+    // Left and right queue
     std::vector<double> m_queueL;
     std::vector<double> m_queueR;
+
+    // vectors to keep track of left and right output
+    std::vector<double> m_outl;
+    std::vector<double> m_outr;
+
     int mWrloc;
     int mRdloc;
     const int MAXQUEUESIZE = 200000;
