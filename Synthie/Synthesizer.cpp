@@ -279,9 +279,9 @@ bool CSynthesizer::Generate(double * frame)
 			for (int i = 0; i < GetNumChannels(); i++)
 			{
 				frame[i] += frames[i];
-				//frame[i] += noise_gate_frames[i];
+				frame[i] += noise_gate_frames[i];
 				//frame[i] += compression_frames[i];
-				frame[i] += chorus_frames[i];
+				//frame[i] += chorus_frames[i];
 			}
 
 			// Move to the next instrument in the list

@@ -1,6 +1,6 @@
 <score bpm="150" beatspermeasure="4">
 
-	<instrument instrument="Additive">
+	<instrument instrument="Additive" send0="1" send1="0" send2="0" send3="0" send4 = "0">
 		<note measure="1" beat="1" duration="1" note="Db3" a1=".5" />
 		<note measure="1" beat="2.5" duration="0.5" note="Ab2" a1=".5" />
 		<note measure="1" beat="4" duration="1" note="Db3" a1=".5" />
