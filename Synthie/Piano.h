@@ -36,6 +36,7 @@ public:
     void SetDuration(double duration) { m_duration = duration; }
     void SetPedal(bool pedal) { m_pedal = pedal; }
     void SetWaves(std::vector<short> waves) { m_waves = waves; }
+    void SetDynamic(double dynamic) { m_dynamic = dynamic; }
 
     // Play notes to generate a piano sound (Similar to Generate function)
     // virtual void Play() override;
@@ -54,17 +55,17 @@ public:
 
 
 private:
-    // Collection of notes used for piano
-    std::vector<CNote> m_notes;
 
     double m_duration;
     double m_time;
     int m_index;
     int m_sampletotal;
+    double m_attack;
+    double m_release;
 
     bool m_pedal = false;
     std::vector<short> m_waves;
 
-    double m_dynamic = 0;
+    double m_dynamic;
 };
 
