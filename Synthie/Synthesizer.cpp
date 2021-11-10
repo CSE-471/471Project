@@ -173,7 +173,7 @@ bool CSynthesizer::Generate(double * frame)
 
 	// Make sure that effects does not apply to piano 
 
-	if (m_callpiano == true)
+	if (true)
 	{
 		for (list<CInstrument*>::iterator node = m_instruments.begin(); node != m_instruments.end(); )
 		{
