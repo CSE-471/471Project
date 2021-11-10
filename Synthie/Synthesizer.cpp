@@ -84,23 +84,38 @@ bool CSynthesizer::Generate(double * frame)
 		if (note->Instrument() == L"ToneInstrument")
 		{
 			instrument = new CToneInstrument(GetBeatsPerMinute());
+			m_callpiano = false;
 		}
 		else if(note->Instrument() == L"Additive")
 		{
 			instrument = new CAdditive(GetBeatsPerMinute());
+			m_callpiano = false;
 		}
 		// For noise gate effect here
 		else if (note->Instrument() == L"Noise Gate")
 		{
 			m_noise_gate.SetNote(note);
 			m_noise_gate.Start();
+			m_callpiano = false;
 		}
 		else if (note->Instrument() == L"Compression")
 		{
 			m_compression.SetNote(note);
 			m_compression.Start();
+			m_callpiano = false;
 		}
-
+		else if (note->Instrument() == L"Chorus")
+		{
+			m_chorus.SetNote(note);
+			m_chorus.Start();
+			m_callpiano = false;
+		}
+		else if (note->Instrument() == L"Flanger")
+		{
+			m_flanger.SetNote(note);
+			m_flanger.Start();
+			m_callpiano = false;
+		}
 		// Piano synthesizer is here 
 		else if (note-> Instrument() == L"Piano")
 		{
@@ -149,6 +164,8 @@ bool CSynthesizer::Generate(double * frame)
 	// output to our output frame.  If an instrument is done (Generate()
 	// returns false), we remove it from the list.
 	//
+
+	// Make sure that effects does not apply to piano 
 	if (m_callpiano == true)
 	{
 		for (list<CInstrument*>::iterator node = m_instruments.begin(); node != m_instruments.end(); )
@@ -184,7 +201,7 @@ bool CSynthesizer::Generate(double * frame)
 		}
 	}
 
-	if (m_callpiano == false)
+	else
 	{
 		for (list<CInstrument*>::iterator node = m_instruments.begin(); node != m_instruments.end();)
 		{
@@ -252,6 +269,15 @@ bool CSynthesizer::Generate(double * frame)
 	//	noise_gate_frames[0] = 0;
 	//	noise_gate_frames[1] = 0;
 
+			// Chorus effect frames
+			double chorus_frames[2];
+			chorus_frames[0] = 0;
+			chorus_frames[1] = 0;
+
+			double flanger_frames[2];
+			flanger_frames[0] = 0;
+			flanger_frames[1] = 0;
+
 			// Process effect here
 			// Noise gate
 			if (channelframes[1][0] != 0)
@@ -259,24 +285,36 @@ bool CSynthesizer::Generate(double * frame)
 				m_noise_gate.Process(channelframes[1], noise_gate_frames);
 			}
 			// Compression
-			else if (channelframes[2][0] != 0)
+			if (channelframes[2][0] != 0)
 			{
 				//m_compression.Process(channelframes[2], compression_frames);
 			}
-
+			// Chorus
+			if (channelframes[3][0] != 0)
+			{
+				m_chorus.Process(channelframes[3], chorus_frames);
+			}
+			// Flanger
+			if (channelframes[4][0] != 0)
+			{
+				m_flanger.Process(channelframes[4], flanger_frames);
+			}
 
 			// Sum all effects to frames
 			for (int i = 0; i < GetNumChannels(); i++)
 			{
-				frame[i] += frame[i];
-				frame[i] += noise_gate_frames[i];
+				frame[i] += frames[i];
+				//frame[i] += noise_gate_frames[i];
 				//frame[i] += compression_frames[i];
+				//frame[i] += chorus_frames[i];
+				frame[i] += flanger_frames[i];
 			}
 
 			// Move to the next instrument in the list
 			node = next;
 		}
 	}
+	
 
 	//
 	// Phase 4: Advance the time and beats

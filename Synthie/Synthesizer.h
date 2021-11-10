@@ -7,6 +7,8 @@ using namespace std;
 #include "Note.h"
 #include "CNoiseGate.h"
 #include "Compression.h"
+#include "Chorus.h"
+#include "Flanger.h"
 #include "PianoSys.h"
 
 class CSynthesizer
@@ -75,7 +77,11 @@ private:
 	//Compression effect
 	CCompression m_compression;
 
+	// Chorus effect
+	CChorus m_chorus;
 
+	// Flanger effect
+	CFlanger m_flanger;
 public:
 	// Get the time since we started generating audio
 	double GetTime();
