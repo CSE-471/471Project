@@ -162,9 +162,9 @@
 	<note measure="1" beat="1" duration="0.5"  note="C4" a1="0.25" b1="0.25"/>
 	<note measure="1" beat="1" duration="0.5"  note="E4" a1="0.25" b1="0.25"/>
 
-	<note measure="2" beat="1.7" duration="2.0"  note="G3" a1="0.25"/>
-	<note measure="2" beat="1.7" duration="2.0" note="A3" a1="0.25"/>
-	<note measure="2" beat="1.7" duration="2.0" note="C4" a1="0.25"/>
+	<note measure="2" beat="1.7" duration="2.0"  note="G3" a1="0.25" vFreq="5" vAmp="10"/>
+	<note measure="2" beat="1.7" duration="2.0" note="A3" a1="0.25" vFreq="5" vAmp="10"/>
+	<note measure="2" beat="1.7" duration="2.0" note="C4" a1="0.25" vFreq="5" vAmp="10"/>
 	<note measure="2" beat="1.7" duration="2.0" note="E4" a1="0.25" vFreq="5" vAmp="10"/>
 
 	<note measure="3" beat="2" duration="0.7" note="G3" a1="0.25" />
@@ -327,8 +327,12 @@
 	<note measure="57" beat="2" duration="0.7" note="A3" a1="0.25"/>
 	<note measure="57" beat="2" duration="0.7" note="C4#" a1="0.25"/>
 	<note measure="57" beat="2" duration="0.7" note="E4" a1="0.25"/>
+		  
+     </instrument>
 
-	
+
+     <instrument instrument="Additive" send0="0" send1="1" send2="0" send3="0" send4="0">
+		
 	<note measure="58" beat="1" duration="2" note="G3" a1="0.15"/>
 	<note measure="58" beat="1" duration="2" note="A3" a1="0.15"/>
 	<note measure="58" beat="1" duration="2" note="C4" a1="0.15"/>
@@ -354,6 +358,9 @@
 	<note measure="61" beat="1" duration="2" note="A3" a1="0.20"/>
 	<note measure="61" beat="1" duration="2" note="C4#" a1="0.20"/>
 
+     </instrument>
+
+     <instrument instrument="Additive" send0="0" send1="0" send2="1" send3="0" send4="0">
 	<note measure="62" beat="1.7" duration="0.5" note="F3#" a1="0.25"/>
 	<note measure="62" beat="1.7" duration="0.5" note="A3" a1="0.25"/>
 	<note measure="62" beat="1.7" duration="0.5" note="C4#" a1="0.25"/>
@@ -370,9 +377,12 @@
 	<note measure="64" beat="1" duration="2" note="A3" a1="0.25"/>
 	<note measure="64" beat="1" duration="2" note="C4" a1="0.25"/>
 
-	<note measure="20" beat="1.7" duration="0.5" note="G3" a1="0.25"/>
-	<note measure="20" beat="1.7" duration="0.5" note="B3" a1="0.25"/>
-	<note measure="20" beat="1.7" duration="0.5" note="D4" a1="0.25"/>
+     </instrument>
+
+     <instrument instrument="Additive" send0="0" send1="0" send2="0" send3="1" send4="0">
+	<note measure="65" beat="1.7" duration="0.5" note="G3" a1="0.25"/>
+	<note measure="65" beat="1.7" duration="0.5" note="B3" a1="0.25"/>
+	<note measure="65" beat="1.7" duration="0.5" note="D4" a1="0.25"/>
 
 	<note measure="65" beat="2.50" duration="1.5" note="G3" a1="0.25"/>
 	<note measure="65" beat="2.50" duration="1.5" note="B3" a1="0.25"/>
@@ -385,8 +395,9 @@
 	<note measure="67" beat="1" duration="2" note="A3" a1="0.25"/>
 	<note measure="67" beat="1" duration="2" note="C4#" a1="0.25"/>
 	<note measure="67" beat="1" duration="2" note="E4" a1="0.25"/>
+     </instrument>
 
-
+     <instrument instrument="Additive" send0="0" send1="0" send2="0" send3="0" send4="1">
 	<note measure="68" beat="1.7" duration="0.5" note="A3" a1="0.25"/>
 	<note measure="68" beat="1.7" duration="0.5" note="C4#" a1="0.25"/>
 	<note measure="68" beat="1.7" duration="0.5" note="E4" a1="0.25"/>
@@ -398,7 +409,7 @@
 
 	<note measure="69" beat="2" duration="0.7" note="A3" a1="0.25"/>
 	<note measure="69" beat="2" duration="0.7" note="C4#" a1="0.25"/>
-	<note measure="69" beat="2" duration="0.7" note="E4" a1="0.25"/>		  
+	<note measure="69" beat="2" duration="0.7" note="E4" a1="0.25"/>
 
      </instrument>
 </score>
