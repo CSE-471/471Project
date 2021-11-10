@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<score bpm="120" beatspermeasure="2">
+     <instrument instrument="Piano">
+	<note measure="1" beat="1" duration="2" dynamic = "1" note="CompletePiano/G3s.wav"/>
+	<note measure="1" beat="1" duration="2" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="1" beat="1" duration="2" dynamic = "1" note="CompletePiano/C4s.wav"/>
+	<note measure="1" beat="1" duration="2" dynamic = "1" note="CompletePiano/E4s.wav"/>
+	<note measure="1" beat="1" duration="1" dynamic = "1" note="CompletePiano/pedald.wav"/>
+
+	<note measure="2" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/G3s.wav"/>
+	<note measure="2" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="2" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/C4s.wav"/>
+	<note measure="2" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/E4s.wav"/>
+	<note measure="2" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/pedalu.wav"/>
+
+	<note measure="2" beat="2.50" duration="2.0" dynamic = "1" note="CompletePiano/G3s.wav"/>
+	<note measure="2" beat="2.50" duration="2.0" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="2" beat="2.50" duration="2.0" dynamic = "1" note="CompletePiano/C4s.wav"/>
+	<note measure="2" beat="2.50" duration="2.0" dynamic = "1" note="CompletePiano/E4s.wav"/>
+
+	<note measure="3" beat="2" duration="0.7" dynamic = "1" note="CompletePiano/G3s.wav"/>
+	<note measure="3" beat="2" duration="0.7" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="3" beat="2" duration="0.7" dynamic = "1" note="CompletePiano/C4s.wav"/>
+	<note measure="3" beat="2" duration="0.7" dynamic = "1" note="CompletePiano/E4s.wav"/>
+
+	<note measure="4" beat="1" duration="2" dynamic = "1" note="CompletePiano/F3#s.wav"/>
+	<note measure="4" beat="1" duration="2" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="4" beat="1" duration="2" dynamic = "1" note="CompletePiano/C4#s.wav"/>
+	<note measure="4" beat="1" duration="1" dynamic = "1" note="CompletePiano/pedald.wav"/>
+
+	<note measure="5" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/F3#s.wav"/>
+	<note measure="5" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="5" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/C4#s.wav"/>
+	<note measure="5" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/pedalu.wav"/>
+
+	<note measure="5" beat="2.50" duration="2.0" dynamic = "1" note="CompletePiano/F3#s.wav"/>
+	<note measure="5" beat="2.50" duration="2.0" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="5" beat="2.50" duration="2.0" dynamic = "1" note="CompletePiano/C4#s.wav"/>
+
+	<note measure="6" beat="2" duration="0.7" dynamic = "1" note="CompletePiano/F3#s.wav"/>
+	<note measure="6" beat="2" duration="0.7" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="6" beat="2" duration="0.7" dynamic = "1" note="CompletePiano/C4#s.wav"/>
+
+	<note measure="7" beat="1" duration="2" dynamic = "2" note="CompletePiano/F3s.wav"/>
+	<note measure="7" beat="1" duration="2" dynamic = "2" note="CompletePiano/A3s.wav"/>
+	<note measure="7" beat="1" duration="2" dynamic = "2" note="CompletePiano/C4s.wav"/>
+	<note measure="7" beat="1" duration="1" dynamic = "2" note="CompletePiano/pedald.wav"/>
+
+	<note measure="8" beat="1.7" duration="0.5" dynamic = "3" note="CompletePiano/G3s.wav"/>
+	<note measure="8" beat="1.7" duration="0.5" dynamic = "3" note="CompletePiano/B3s.wav"/>
+	<note measure="8" beat="1.7" duration="0.5" dynamic = "3" note="CompletePiano/D4s.wav"/>
+	<note measure="8" beat="1.7" duration="0.5" dynamic = "3" note="CompletePiano/pedalu.wav"/>
+
+	<note measure="8" beat="2.50" duration="2.0" dynamic = "3" note="CompletePiano/G3s.wav"/>
+	<note measure="8" beat="2.50" duration="2.0" dynamic = "3" note="CompletePiano/B3s.wav"/>
+	<note measure="8" beat="2.50" duration="2.0" dynamic = "3" note="CompletePiano/D4s.wav"/>
+
+	<note measure="9" beat="2" duration="0.7" dynamic = "3" note="CompletePiano/G3s.wav"/>
+	<note measure="9" beat="2" duration="0.7" dynamic = "3" note="CompletePiano/B3s.wav"/>
+	<note measure="9" beat="2" duration="0.7" dynamic = "3" note="CompletePiano/D4s.wav"/>
+
+	<note measure="10" beat="1" duration="2" dynamic = "4" note="CompletePiano/A3s.wav"/>
+	<note measure="10" beat="1" duration="2" dynamic = "4" note="CompletePiano/C4#s.wav"/>
+	<note measure="10" beat="1" duration="2" dynamic = "4" note="CompletePiano/E4s.wav"/>
+	<note measure="10" beat="1" duration="1" dynamic = "4" note="CompletePiano/pedald.wav"/>
+
+	<note measure="11" beat="1.7" duration="0.5" dynamic = "4" note="CompletePiano/A3s.wav"/>
+	<note measure="11" beat="1.7" duration="0.5" dynamic = "4" note="CompletePiano/C4#s.wav"/>
+	<note measure="11" beat="1.7" duration="0.5" dynamic = "4" note="CompletePiano/E4s.wav"/>
+	<note measure="11" beat="1.7" duration="0.5" dynamic = "4" note="CompletePiano/pedalu.wav"/>
+
+	<note measure="11" beat="2.50" duration="2.0" dynamic = "4" note="CompletePiano/A3s.wav"/>
+	<note measure="11" beat="2.50" duration="2.0" dynamic = "4" note="CompletePiano/C4#s.wav"/>
+	<note measure="11" beat="2.50" duration="2.0" dynamic = "4" note="CompletePiano/E4s.wav"/>
+
+	<note measure="12" beat="2" duration="0.7" dynamic = "4" note="CompletePiano/A3s.wav"/>
+	<note measure="12" beat="2" duration="0.7" dynamic = "4" note="CompletePiano/C4#s.wav"/>
+	<note measure="12" beat="2" duration="0.7" dynamic = "4" note="CompletePiano/E4s.wav"/>
+
+	
+	<note measure="13" beat="1" duration="2" dynamic = "1" note="CompletePiano/G3s.wav"/>
+	<note measure="13" beat="1" duration="2" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="13" beat="1" duration="2" dynamic = "1" note="CompletePiano/C4s.wav"/>
+	<note measure="13" beat="1" duration="2" dynamic = "1" note="CompletePiano/E4s.wav"/>
+	<note measure="13" beat="1" duration="1" dynamic = "1" note="CompletePiano/pedald.wav"/>
+
+	<note measure="14" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/G3s.wav"/>
+	<note measure="14" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="14" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/C4s.wav"/>
+	<note measure="14" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/E4s.wav"/>
+	<note measure="14" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/pedalu.wav"/>
+
+	<note measure="14" beat="2.50" duration="2.0" dynamic = "1" note="CompletePiano/G3s.wav"/>
+	<note measure="14" beat="2.50" duration="2.0" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="14" beat="2.50" duration="2.0" dynamic = "1" note="CompletePiano/C4s.wav"/>
+	<note measure="14" beat="2.50" duration="2.0" dynamic = "1" note="CompletePiano/E4s.wav"/>
+
+	<note measure="15" beat="2" duration="0.7" dynamic = "1" note="CompletePiano/G3s.wav"/>
+	<note measure="15" beat="2" duration="0.7" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="15" beat="2" duration="0.7" dynamic = "1" note="CompletePiano/C4s.wav"/>
+	<note measure="15" beat="2" duration="0.7" dynamic = "1" note="CompletePiano/E4s.wav"/>
+
+	<note measure="16" beat="1" duration="2" dynamic = "1" note="CompletePiano/F3#s.wav"/>
+	<note measure="16" beat="1" duration="2" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="16" beat="1" duration="2" dynamic = "1" note="CompletePiano/C4#s.wav"/>
+	<note measure="16" beat="1" duration="1" dynamic = "1" note="CompletePiano/pedald.wav"/>
+
+	<note measure="17" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/F3#s.wav"/>
+	<note measure="17" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="17" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/C4#s.wav"/>
+	<note measure="17" beat="1.7" duration="0.5" dynamic = "1" note="CompletePiano/pedalu.wav"/>
+
+	<note measure="17" beat="2.50" duration="2.0" dynamic = "1" note="CompletePiano/F3#s.wav"/>
+	<note measure="17" beat="2.50" duration="2.0" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="17" beat="2.50" duration="2.0" dynamic = "1" note="CompletePiano/C4#s.wav"/>
+
+	<note measure="18" beat="2" duration="0.7" dynamic = "1" note="CompletePiano/F3#s.wav"/>
+	<note measure="18" beat="2" duration="0.7" dynamic = "1" note="CompletePiano/A3s.wav"/>
+	<note measure="18" beat="2" duration="0.7" dynamic = "1" note="CompletePiano/C4#s.wav"/>
+
+	<note measure="19" beat="1" duration="2" dynamic = "2" note="CompletePiano/F3s.wav"/>
+	<note measure="19" beat="1" duration="2" dynamic = "2" note="CompletePiano/A3s.wav"/>
+	<note measure="19" beat="1" duration="2" dynamic = "2" note="CompletePiano/C4s.wav"/>
+	<note measure="19" beat="1" duration="1" dynamic = "2" note="CompletePiano/pedald.wav"/>
+
+	<note measure="20" beat="1.7" duration="0.5" dynamic = "3" note="CompletePiano/G3s.wav"/>
+	<note measure="20" beat="1.7" duration="0.5" dynamic = "3" note="CompletePiano/B3s.wav"/>
+	<note measure="20" beat="1.7" duration="0.5" dynamic = "3" note="CompletePiano/D4s.wav"/>
+	<note measure="20" beat="1.7" duration="0.5" dynamic = "3" note="CompletePiano/pedalu.wav"/>
+
+	<note measure="20" beat="2.50" duration="2.0" dynamic = "3" note="CompletePiano/G3s.wav"/>
+	<note measure="20" beat="2.50" duration="2.0" dynamic = "3" note="CompletePiano/B3s.wav"/>
+	<note measure="20" beat="2.50" duration="2.0" dynamic = "3" note="CompletePiano/D4s.wav"/>
+
+	<note measure="21" beat="2" duration="0.7" dynamic = "3" note="CompletePiano/G3s.wav"/>
+	<note measure="21" beat="2" duration="0.7" dynamic = "3" note="CompletePiano/B3s.wav"/>
+	<note measure="21" beat="2" duration="0.7" dynamic = "3" note="CompletePiano/D4s.wav"/>
+
+	<note measure="22" beat="1" duration="2" dynamic = "4" note="CompletePiano/A3s.wav"/>
+	<note measure="22" beat="1" duration="2" dynamic = "4" note="CompletePiano/C4#s.wav"/>
+	<note measure="22" beat="1" duration="2" dynamic = "4" note="CompletePiano/E4s.wav"/>
+	<note measure="22" beat="1" duration="1" dynamic = "4" note="CompletePiano/pedald.wav"/>
+
+	<note measure="23" beat="1.7" duration="0.5" dynamic = "4" note="CompletePiano/A3s.wav"/>
+	<note measure="23" beat="1.7" duration="0.5" dynamic = "4" note="CompletePiano/C4#s.wav"/>
+	<note measure="23" beat="1.7" duration="0.5" dynamic = "4" note="CompletePiano/E4s.wav"/>
+	<note measure="23" beat="1.7" duration="0.5" dynamic = "4" note="CompletePiano/pedalu.wav"/>
+
+	<note measure="23" beat="2.50" duration="2.0" dynamic = "4" note="CompletePiano/A3s.wav"/>
+	<note measure="23" beat="2.50" duration="2.0" dynamic = "4" note="CompletePiano/C4#s.wav"/>
+	<note measure="23" beat="2.50" duration="2.0" dynamic = "4" note="CompletePiano/E4s.wav"/>
+
+	<note measure="24" beat="2" duration="0.7" dynamic = "4" note="CompletePiano/A3s.wav"/>
+	<note measure="24" beat="2" duration="0.7" dynamic = "4" note="CompletePiano/C4#s.wav"/>
+	<note measure="24" beat="2" duration="0.7" dynamic = "4" note="CompletePiano/E4s.wav"/>
+
+     </instrument>
+</score>
