@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<score bpm="120" beatspermeasure="2">
+     <instrument instrument="Additive">
+		  <!-- BASIC DEMONSTRATION -->
+		  <note measure="1" beat="1" duration="0.2" note="B3" a1="0.75" a2="0.5" a3="0.25"/>
+		  <note measure="1" beat="1.2" duration="0.2" note="B4" a1="0.75" a2="0.5" a3="0.25" />
+		  <note measure="1" beat="1.4" duration="0.2" note="Gb5" a1="0.75" a2="0.5" a3="0.25" />
+		  <note measure="1" beat="1.6" duration="0.2" note="C6" a1="0.75" a2="0.5" a3="0.25" />
+		  <note measure="1" beat="1.8" duration="0.2" note="Gb6" a1="0.5" a2="0.5" a3="0.25" />
+		  <note measure="1" beat="2" duration="0.5" note="A6" a1="0.5" a2="0.5" a3="0.25" />
+
+		  <!-- POLYPHONY -->
+		  <note measure="3" beat="1" duration="0.5" note="A6" a1="1" a2="1" a3="1" />
+		  <note measure="3" beat="1" duration="0.5" note="B3" a1="1" a2="1" a3="1" b1="0.25" b2="0.1" b3="0.25" b4="0.1" />
+
+	          <!-- CROSS FADING -->
+                  <note measure="6" beat="1" duration="1.5" note="G2" a1="0.5" a2="0.4" a3="0.3" a4="0.2" b1="0.9" b2="0.8" b3="0.7" b4="0.6"/>
+		  		  
+		  <!-- VIBRATO -->
+		  <note measure="8" beat="0.5" duration="2" a1="0.5" vFreq="5" vAmp="10" note="E3"/>		  
+     </instrument>
+</score>

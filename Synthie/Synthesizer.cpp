@@ -261,7 +261,7 @@ bool CSynthesizer::Generate(double * frame)
 			// Compression
 			else if (channelframes[2][0] != 0)
 			{
-				m_compression.Process(channelframes[2], compression_frames);
+				//m_compression.Process(channelframes[2], compression_frames);
 			}
 
 
@@ -270,7 +270,7 @@ bool CSynthesizer::Generate(double * frame)
 			{
 				frame[i] += frame[i];
 				frame[i] += noise_gate_frames[i];
-				frame[i] += compression_frames[i];
+				//frame[i] += compression_frames[i];
 			}
 
 			// Move to the next instrument in the list
