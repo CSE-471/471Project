@@ -71,5 +71,16 @@ void CEffect::SetNote(CNote* note)
 			value.ChangeType(VT_R8);
 			m_threshold = value.dblVal;
 		}
+		// rate value for chorus
+		else if (name == "rate")
+		{
+			value.ChangeType(VT_R8);
+			m_rate = value.dblVal;
+		}
+		else if (name == "range")
+		{
+			value.ChangeType(VT_R8);
+			m_range = value.dblVal;
+		}
 	}
 }
