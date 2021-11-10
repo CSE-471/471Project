@@ -8,6 +8,7 @@
 #include <vector>
 #include <algorithm>
 
+
 CSynthesizer::CSynthesizer()
 : m_time(0)
 {
@@ -154,6 +155,11 @@ bool CSynthesizer::Generate(double * frame)
 		frame[c] = 0;
 	}
 
+
+
+
+
+
 	//
 	// Phase 3: Play an active instruments
 	//
@@ -166,6 +172,7 @@ bool CSynthesizer::Generate(double * frame)
 	//
 
 	// Make sure that effects does not apply to piano 
+
 	if (m_callpiano == true)
 	{
 		for (list<CInstrument*>::iterator node = m_instruments.begin(); node != m_instruments.end(); )
@@ -241,9 +248,10 @@ bool CSynthesizer::Generate(double * frame)
 				delete instrument;
 			}
 
-			//
-			// Phase 3a: Effects
-			// 
+
+		//
+		// Phase 3a: Effects
+		// 
 			double frames[2];
 			for (int i = 0; i < GetNumChannels(); i++)
 			{
@@ -254,20 +262,6 @@ bool CSynthesizer::Generate(double * frame)
 			double noise_gate_frames[2];
 			noise_gate_frames[0] = 0;
 			noise_gate_frames[1] = 0;
-
-	////	//
-	////	// Phase 3a: Effects
-	////	// 
-	//	double frames[2];
-	//	for (int i = 0; i < GetNumChannels(); i++)
-	//	{
-	//		frames[i] = channelframes[0][i];
-	//	}
-	//	//Add code here for 4 effects Noise Gate, Compressor, ..., and ...
-	//	// Noise Gate effect frames
-	//	double noise_gate_frames[2];
-	//	noise_gate_frames[0] = 0;
-	//	noise_gate_frames[1] = 0;
 
 			// Chorus effect frames
 			double chorus_frames[2];
