@@ -155,10 +155,10 @@
 	<note measure="24" beat="2" duration="0.7" dynamic = "4" note="CompletePiano/E4s.wav"/>
       </instrument>
         <instrument instrument="Additive" send0="1" send1="0" send2="0" send3="0" send4 = "0">
-	<note measure="25" beat="1" duration="2" note="E4" a1=".5" />
+	<note measure="25" beat="1" duration="2" note="E4" a1=".25" b1="0.5" />
 	<note measure="26" beat="1.7" duration="0.5" note="E4" a1=".5" />
 	<note measure="26" beat="2.5" duration="2" note="E4" a1=".5" />
-	<note measure="27" beat="2" duration="0.7" note="E4" a1=".5" />
+	<note measure="27" beat="2" duration="0.7" note="E4" a1=".5" vFreq="5" vAmp="10" />
 
 	<note measure="28" beat="1" duration="2" note="Db4" a1=".5" />
 	<note measure="29" beat="1.7" duration="0.5" note="Db4" a1=".5" />
